@@ -1,0 +1,49 @@
+  body{
+    background-color: lightseagreen;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  form {
+    width: 35%;
+    border:2px solid rgb(30, 150, 144);
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+
+  }
+  label {
+  font-size: 12px;
+  }
+  input{
+    border: 1px solid #cccccc;
+  }
+  input:focus{
+    border: 1px solid lightseagreen;
+  }
+
+  input:hover{
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+    opacity: .8;
+  }
+
+  #nombres{
+    margin-right: 30px ;
+   }
+
+  input[type="email"],input[type="password"]{
+    width: 80%;
+
+  }
+
+  input[type="submit"]{
+    width: 50%;
+    padding: 5px;
+    background: lightseagreen ;
+    color: #ffffff;
+  }
+
+  h1,p{
+    color:lightseagreen ;
+  }
