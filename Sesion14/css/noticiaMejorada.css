@@ -1,0 +1,45 @@
+.logo{
+  text-align: center;
+  font-size: 40px;
+  background: red;
+  color: white;
+  padding: 20px;
+  margin-bottom: 0;
+}
+.contenedor-nav{
+  margin: 0;
+  background: grey;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+main{
+   font-family: 'Roboto', sans-serif;
+}
+.contenedor-nav .indice{
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+.titulo-seccion{
+  font-size: 18px;
+  color: red;
+}
+.titulo-noticia{
+  font-size: 18px;
+}
+article{
+  color: rgb(148, 148, 148);
+
+}
+img{
+  width: 30%;
+   float: right;
+
+}
+p{
+  background: red;
+  color: white;
+  margin: 0;
+  float: right;
+
+}
