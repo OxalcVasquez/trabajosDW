@@ -20,6 +20,7 @@
   }
   input:focus{
     border: 1px solid lightseagreen;
+    outline: none;
   }
 
   input:hover{
@@ -31,6 +32,7 @@
   #nombres{
     margin-right: 30px ;
    }
+
 
   input[type="email"],input[type="password"]{
     width: 80%;
