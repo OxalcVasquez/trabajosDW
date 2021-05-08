@@ -135,6 +135,9 @@ tr:hover{
   color: white;
   border-radius: 4px;
 }
+.contacto:hover{
+  background-color: #295680;
+}
 
 footer{
   width: 1000px;
