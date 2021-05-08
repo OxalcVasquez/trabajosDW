@@ -1,0 +1,17 @@
+.titulos-col{
+
+  background-color:#0988ca;
+}
+.sub-col{
+  background-color: #f85408;
+}
+td{
+  text-align:center;
+}
+table{
+  position: absolute;
+}
+.asesor{
+  width: 15%;
+  float: right;
+}
