@@ -1,0 +1,36 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+  width: 98%;
+  margin: auto;
+}
+header nav img {
+ width: 8%;
+}
+
+header nav ul {
+  overflow: hidden;
+}
+header nav ul li{
+  float: left;
+  list-style: none;
+}
+.contenedor-nav{
+  padding: 20px;
+  background:#323ab0;
+}
+.contenedor-nav ul li .indice {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 0px 5px;
+  margin-left: 20px;
+  display: inline-block;
+}
