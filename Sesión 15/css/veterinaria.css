@@ -22,43 +22,57 @@ body{
 
 
 .encabezado{
-   grid-area: header;
+  grid-area: header;
   background: #fff;
 }
 .menu{
    grid-area: menu-nav;
-  background: #2a9d8f;
+  background: #3dccc7;
 
 
 }
-.seccion-contenido{
+.main{
   grid-area: seccion-content;
-  background: #e9c46a;
+  background: #ff5a5f;
 
 }
 .menu-lateral{
   grid-area: menu-aside;
-  background: #f4a261;
+  background: #3dccc7;
 
 
 }
 .pie{
   grid-area: pie;
-  background: #e63946;
+  background: #028090;;
 
 }
 .contenedor-encabezado{
   width: 80%;
+
 }
 .texto-encabezado {
-  padding-top: 20px;
+   font-family: 'Fredoka One', cursive;
+  padding: 20px 0;
   text-align: center;
-  width: 70%;
+  width: 90%;
   float: left;
 }
-.contenedor-encabezado img{
-  width: 15%;
+.texto-encabezado .logo-texto {
+ color: #3dccc7;
+}
+.texto-encabezado .logo-texto-2 {
+ color: #ff5a5f;
+}
+
+
+.encabezado .logo-perrito{
+  height: 100%;
+  padding-top: 10px;
   float: left;
+}
+.encabezado .logo-perrito img{
+  width: 100px;
 }
 
 .menu ul li {
@@ -71,8 +85,9 @@ body{
   color: #fff;
 }
 
+
 .menu ul li:hover{
-  background: black;
+  background: #ff5a5f;
 }
 .menu-lateral h3 {
   padding-top: 10px;
@@ -88,22 +103,117 @@ body{
   text-decoration: none;
   color: #fff;
 }
+.menu-lateral h3 {
+  color: #fff;
+}
 .menu-lateral ul li a:hover {
-  text-decoration: underline
+  border-bottom:1px solid #ff5a5f;
+}
+
+.seccion-contenido {
+
+  background: #fff;
+  margin: 5px 5px 5px 5px;
+
+}
+.seccion-contenido p img{
+  margin: auto;
+  display: block;
+  padding: 10px;
+  width: 20%;
+}
+.seccion-contenido h3 {
+  padding-top: 10px;
+  font-family: 'Fredoka One', cursive;
+  font-weight: lighter;
+  color: #3dccc7;
+  text-align: center;
+
+}
+.seccion-contenido p {
+  line-height: 20px;
+  padding: 10px;
+  text-align: justify;
+
+}
+.pie{
+  padding: 10px;
+}
+.pie p{
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
 }
 
 @media (min-width:600px) and (max-width:1000px) {
   .grid{
      grid-template-areas: "header header" "menu-nav menu-nav" "menu-aside seccion-content " "pie pie";
      grid-template-columns: 30% 70%;
-     grid-template-rows:  100px 50px 1fr 100px 50px;
+     /* grid-template-rows:  100px 50px 1fr 100px 50px; */
   }
+  .menu ul li {
+    display: inline-block;
+    padding: 15px;
+    list-style: none;
+  }
+
 }
 
 @media (min-width:1001px) {
   .grid{
      grid-template-areas: "header header header" "menu-nav seccion-content menu-aside" "pie pie pie";
      grid-template-columns: 200px 1fr 200px;
-     grid-template-rows:  150px 1fr 100px;
+     /* grid-template-rows:  150px 1fr 100px; */
   }
+
+   .seccion-contenido {
+    height: 97%;
+     margin: 5px 5px 5px 5px;
+  }
+  .menu ul li {
+      display: block;
+      padding: 20px;
+  }
+  .seccion-contenido p{
+    font-size: 14px;
+  }
+  .seccion-contenido .prueba h3 {
+    /* left: 100px; */
+    text-align: center;
+  }
+
+  .seccion-contenido  img{
+    width: 15%;
+    margin-left: 20px;
+    float: left;
+
+  }
+  /* .contenedor-encabezado{
+    width: 80%;
+
+  } */
+  .texto-encabezado {
+    padding: 20px 0;
+    text-align: center;
+    /* width: 700px; */
+    font-size: 25px;
+    float: left;
+  }
+  .texto-encabezado .logo-texto {
+   color: #3dccc7;
+  }
+  .texto-encabezado .logo-texto-2 {
+   color: #ff5a5f;
+  }
+
+  .encabezado .logo-perrito{
+    height: 50%;
+    padding-top: 10px;
+    float: left;
+  }
+  .encabezado .logo-perrito img{
+    width: 150px;
+  }
+
 }
