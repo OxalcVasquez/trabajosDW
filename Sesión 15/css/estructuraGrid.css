@@ -1,0 +1,35 @@
+.grid{
+  display: grid;
+   grid-template-areas:"header header header" "nav section aside" "footer footer footer" ;
+  grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows:  200px 400px 100px;
+
+}
+
+
+.encabezado{
+   grid-area: header;
+  background: #264653;
+}
+.menu{
+   grid-area: nav;
+  background: #2a9d8f;
+
+
+}
+.seccion-contenido{
+  grid-area: section;
+  background: #e9c46a;
+
+}
+.menu-lateral{
+  grid-area: aside;
+  background: #f4a261;
+
+
+}
+.pie{
+  grid-area: footer;
+  background: #e63946;
+
+}

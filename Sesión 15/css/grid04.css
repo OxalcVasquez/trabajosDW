@@ -1,0 +1,10 @@
+.grid{
+  display: grid;
+  grid-template-columns: 100px repeat(2,50px) 200px;
+  grid-template-rows:  repeat(2,50px 100px)
+}
+
+.a,.b,.c,.d{
+  border: 2px solid #000;
+  border-collapse: collapse;
+}

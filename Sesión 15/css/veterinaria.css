@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid{
+  display: grid;
+  margin: 0px auto;
+  max-width: 1000px;
+  min-height: 100vh;
+   /* grid-template-areas:"header header header" "nav section aside" "footer footer footer" ; */
+   grid-template-areas: "header" "menu-nav" "seccion-content" "menu-aside" "pie";
+   /* Se puede poner myheader */
+  grid-template-columns: 100%;
+   /* grid-template-rows:  100px 50px 1fr 100px 50px; */
+
+}
+body{
+  background: cornflowerblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.encabezado{
+   grid-area: header;
+  background: #fff;
+}
+.menu{
+   grid-area: menu-nav;
+  background: #2a9d8f;
+
+
+}
+.seccion-contenido{
+  grid-area: seccion-content;
+  background: #e9c46a;
+
+}
+.menu-lateral{
+  grid-area: menu-aside;
+  background: #f4a261;
+
+
+}
+.pie{
+  grid-area: pie;
+  background: #e63946;
+
+}
+.contenedor-encabezado{
+  width: 80%;
+}
+.texto-encabezado {
+  padding-top: 20px;
+  text-align: center;
+  width: 70%;
+  float: left;
+}
+.contenedor-encabezado img{
+  width: 15%;
+  float: left;
+}
+
+.menu ul li {
+  display: block;
+  padding: 10px;
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu ul li:hover{
+  background: black;
+}
+.menu-lateral h3 {
+  padding-top: 10px;
+  text-align: center;
+
+}
+.menu-lateral ul li {
+  display: block;
+  padding: 10px;
+  list-style: none;
+}
+.menu-lateral ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-lateral ul li a:hover {
+  text-decoration: underline
+}
+
+@media (min-width:600px) and (max-width:1000px) {
+  .grid{
+     grid-template-areas: "header header" "menu-nav menu-nav" "menu-aside seccion-content " "pie pie";
+     grid-template-columns: 30% 70%;
+     grid-template-rows:  100px 50px 1fr 100px 50px;
+  }
+}
+
+@media (min-width:1001px) {
+  .grid{
+     grid-template-areas: "header header header" "menu-nav seccion-content menu-aside" "pie pie pie";
+     grid-template-columns: 200px 1fr 200px;
+     grid-template-rows:  150px 1fr 100px;
+  }
+}

@@ -1,0 +1,29 @@
+header{
+  background: #264653;
+  height: 150px;
+}
+nav{
+  background: #2a9d8f;
+  width: 25%;
+
+}
+section{
+  background: #e9c46a;
+  width: 50%;
+}
+aside{
+  background: #f4a261;
+  width: 25%;
+
+}
+footer{
+  background: #e63946;
+  height: 100px;
+  clear: both;
+}
+nav,aside,section {
+  float: left;
+  height: 450px;
+}
+
+

@@ -1,0 +1,24 @@
+.grid{
+  display: grid;
+   grid-template-areas:"head head" "menu main" "foot foot" ;
+}
+
+.a{
+  grid-area: head;
+  background: #9d0208;
+}
+
+.b{
+  grid-area: menu;
+  background: #d00000;
+}
+
+.c{
+  grid-area: main;
+  background: #faa307;
+}
+
+.d{
+  grid-area: foot;
+  background: #ffba08;
+}
