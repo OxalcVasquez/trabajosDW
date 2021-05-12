@@ -16,7 +16,7 @@
 
 }
 body{
-  background: cornflowerblue;
+  background-image: url("../img/fondo.png");
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -116,13 +116,13 @@ body{
   margin: 5px 5px 5px 5px;
 
 }
-.seccion-contenido p img{
+.seccion-contenido img{
   margin: auto;
   display: block;
   padding: 10px;
   width: 20%;
 }
-.seccion-contenido h3 {
+.seccion-contenido  h3 {
   padding-top: 10px;
   font-family: 'Fredoka One', cursive;
   font-weight: lighter;
@@ -157,6 +157,13 @@ body{
     padding: 15px;
     list-style: none;
   }
+  .seccion-contenido  h3 {
+    text-align: center;
+
+  }
+  .encabezado{
+    background: #fff;
+  }
 
 }
 
@@ -178,9 +185,9 @@ body{
   .seccion-contenido p{
     font-size: 14px;
   }
-  .seccion-contenido .prueba h3 {
-    /* left: 100px; */
-    text-align: center;
+  .seccion-contenido  h3 {
+    text-align: left;
+
   }
 
   .seccion-contenido  img{
@@ -215,5 +222,6 @@ body{
   .encabezado .logo-perrito img{
     width: 150px;
   }
+
 
 }
