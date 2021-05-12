@@ -1,0 +1,101 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: #e9ecf4;
+  color: #000;
+  font-family: 'Manjari', sans-serif;
+}
+.grid{
+  display: grid;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  gap : 20px;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,auto);
+
+  grid-template-areas: "header header header" "contenido contenido sidebar" "widget1 widget2 sidebar" "footer footer footer";
+}
+
+.grid > div,
+.grid .header,
+.grid .contenido,
+.grid .sidebar,
+.grid .footer
+ {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+
+}
+
+.grid .header{
+  background: #023047;
+  color: #fff;
+  grid-area: header;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+  /* -1 si no sabemos cuantp */
+}
+
+.grid .contenido{
+  /* grid-column: span 2; */
+  /* -1 si no sabemos cuantp */
+  grid-area: contenido;
+}
+
+.grid .sidebar{
+  /* grid-column: 3/4; */
+  grid-area: sidebar;
+  background: #ffb703 ;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  /* grid-row: span 2; */
+
+  /* -1 si no sabemos cuantp */
+}
+.grid .widget-1
+{
+  grid-area: widget1;
+}
+
+.grid .widget-2
+{
+  grid-area: widget2;
+}
+
+.grid .widget-1,
+.grid .widget-2
+{
+  background:#219ebc ;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* -1 si no sabemos cuantp */
+}
+
+.grid .footer
+{
+  grid-area: footer;
+  background:#023047 ;
+  color: #fff;
+  /* grid-column: span 3; */
+
+}
+
+@media screen and (max-width : 768px) {
+  .grid{
+
+    grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "widget1 widget1 widget2 " "footer footer footer";
+  }
+
+}
