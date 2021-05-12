@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ font-family: 'Poppins', sans-serif;
+}
+.grid{
+  display: grid;
+  grid-template-areas:"lateral-izquierdo contenido" "pie pie";
+  grid-template-columns: 0.6fr 2fr;
+  /* grid-template-rows:  auto; */
+  /* grid-template-rows:  100px 100px 300px; */
+
+}
+.grid-anidado-izquierdo{
+  display: grid;
+  /* grid-template-areas:"lateral-izquierdo lateral-derecho" "pie pie"; */
+  grid-template-areas:"perfil-foto" "contacto" "educacion";
+  grid-template-columns: 100%;
+  grid-template-rows:  auto;
+}
+
+.grid-anidado-derecho{
+  display: grid;
+  /* grid-template-areas:"lateral-izquierdo lateral-derecho" "pie pie"; */
+  grid-template-areas:"perfil" "experiencia" "habilidades" "intereses";
+  grid-template-columns: 100%;
+  grid-template-rows:  auto;
+}
+
+/* .grid section{
+  border: 1px solid red;
+} */
+
+.perfil-foto {
+grid-area: perfil-foto;
+padding: 10% 0;
+text-align: center;
+background: #001f54;
+color: #fff;
+}
+.perfil-foto span{
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+.perfil-foto .foto img{
+  width: 60%;
+  border-radius: 50%;
+}
+
+.contacto {
+grid-area: contacto;
+padding: 20px;
+background: #001f54;
+color: #fff;
+}
+
+.contacto ul{
+padding-left: 5px;
+line-height: 27px;
+list-style: none;
+}
+.contacto ul li span i{
+background: #001f54;
+}
+
+
+
+.educacion {
+grid-area: educacion;
+padding: 20px;
+background: #001f54;
+color: #fff;
+}
+
+.educacion .fecha-educacion td{
+  color: #1282a2;
+  font-weight: bold;
+}
+.educacion .carrera td{
+  font-weight: 550;
+}
+
+.perfil{
+  grid-area: perfil;
+  padding: 20px;
+}
+.perfil h2,.experiencia h2,.habilidades h2,.intereses h2{
+  color: #001f54;
+}
+.perfil p{
+  margin-top: 20px;
+  line-height: 27px;
+}
+
+.experiencia{
+  grid-area: experiencia;
+}
+.experiencia h2{
+  padding: 20px 0px 0px 20px;
+}
+.experiencia table{
+  text-align: center;
+  padding: 20px;
+}
+.experiencia table tr{
+   color: #001f54;
+}
+.experiencia table td,.experiencia table td th{
+  padding: 10px 20px;
+}
+.habilidades h2{
+  padding: 20px 0px 0px 20px;
+}
+
+.habilidades ul{
+  margin-top: 10px;
+  list-style: none;
+  line-height: 27px;
+  padding: 0px 20px 20px 20px;
+
+}
+
+.habilidades ul li b{
+  color: #001f54;
+}
+
+.intereses h2{
+  padding: 20px 0px 0px 20px;
+}
+
+.intereses ul li{
+  margin-top: 10px;
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px 20px 20px;
+
+}
+
+.pie{
+  background: #000;
+  grid-area: pie;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+
+}
+
+
+
+/* .lateral-izquierdo{
+  grid-area: lateral-izquierdo;
+  background: brown;
+}
+.lateral-derecho{
+  grid-area: lateral-derecho;
+  background: dodgerblue;
+} */
