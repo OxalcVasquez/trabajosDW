@@ -10,14 +10,25 @@ body{
   display: grid;
   grid-template-areas:"lateral-izquierdo contenido" "pie pie";
   grid-template-columns: 0.6fr 2fr;
+
   /* grid-template-rows:  auto; */
   /* grid-template-rows:  100px 100px 300px; */
-
+}
+.lateral-izquierdo{
+  grid-area: lateral-izquierdo;
+  background: #001f54;
+}
+.contenido {
+  grid-area: contenido;
+  background: #fff;
+}
+.pie{
+  grid-area: pie;
 }
 .grid-anidado-izquierdo{
   display: grid;
   /* grid-template-areas:"lateral-izquierdo lateral-derecho" "pie pie"; */
-  grid-template-areas:"perfil-foto" "contacto" "educacion";
+  grid-template-areas:"perfil-foto" "contacto" "educacion" "idiomas";
   grid-template-columns: 100%;
   grid-template-rows:  auto;
 }
@@ -25,7 +36,7 @@ body{
 .grid-anidado-derecho{
   display: grid;
   /* grid-template-areas:"lateral-izquierdo lateral-derecho" "pie pie"; */
-  grid-template-areas:"perfil" "experiencia" "habilidades" "intereses";
+  grid-template-areas:"perfil" "experiencia" "habilidades" "intereses" "otros-cursos";
   grid-template-columns: 100%;
   grid-template-rows:  auto;
 }
@@ -75,6 +86,7 @@ background: #001f54;
 color: #fff;
 }
 
+
 .educacion .fecha-educacion td{
   color: #1282a2;
   font-weight: bold;
@@ -83,11 +95,29 @@ color: #fff;
   font-weight: 550;
 }
 
+.idiomas{
+  grid-area: idiomas;
+  padding: 20px;
+  background: #001f54;
+  color: #fff;
+}
+
+.idiomas .idioma-title td{
+  color: #1282a2;
+  font-weight: bold;
+  font-size: 16px;
+}
+.idiomas .idioma td{
+  font-size: 16px;
+  font-weight: 550;
+}
+
+
 .perfil{
   grid-area: perfil;
   padding: 20px;
 }
-.perfil h2,.experiencia h2,.habilidades h2,.intereses h2{
+.perfil h2,.experiencia h2,.habilidades h2,.intereses h2,.otros-cursos h2{
   color: #001f54;
 }
 .perfil p{
@@ -107,10 +137,67 @@ color: #fff;
 }
 .experiencia table tr{
    color: #001f54;
+  font-size: 18px;
 }
 .experiencia table td,.experiencia table td th{
   padding: 10px 20px;
 }
+
+.otros-cursos{
+  grid-area: otros-cursos;
+}
+.otros-cursos h2{
+  padding: 20px 0px 0px 20px;
+}
+.otros-cursos table{
+  text-align: center;
+  padding: 20px;
+}
+.otros-cursos table tr{
+   font-size: 18px;
+   color: #001f54;
+}
+.otros-cursos table td,.otros-cursos table td th{
+  padding: 10px 20px;
+}
+
+
+.experiencia td,.experiencia th{
+   border: 1px solid rgba(0, 0, 0,.2);
+
+}
+
+.experiencia table,.experiencia td,.experiencia th,
+  .otros-cursos table,.otros-cursos td,.otros-cursos th{
+   border: 1px solid rgba(0, 0, 0,.2);
+
+}
+
+.experiencia table,.otros-cursos table{
+  border-collapse: collapse ;/*Unifica bordes*/
+  width: 900px;
+   margin: 10px 20px;
+
+  text-align: center;
+}
+
+  .experiencia td, .experiencia th,
+  .otros-cursos td, .otros-cursos th{
+  padding: 10px 20px;
+  font-size: 14px;
+}
+ .experiencia tr:hover , .otros-cursos tr:hover{
+    background: #cccccc ;
+  }
+
+  .experiencia th,.otros-cursos th {
+  background: #001f54 ;
+  font-weight: lighter;
+  color: #fff;
+}
+
+
+
 .habilidades h2{
   padding: 20px 0px 0px 20px;
 }
@@ -120,10 +207,13 @@ color: #fff;
   list-style: none;
   line-height: 27px;
   padding: 0px 20px 20px 20px;
-
+   font-size: 18px;
 }
 
 .habilidades ul li b{
+  color: #001f54;
+}
+.habilidades ul li i{
   color: #001f54;
 }
 
@@ -136,6 +226,11 @@ color: #fff;
   list-style: none;
   display: inline-block;
   padding: 0px 20px 20px 20px;
+
+}
+
+.intereses ul li i{
+ color: #001f54;
 
 }
 

@@ -1,26 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;;
+}
+
   body{
     background-color: lightseagreen;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   form {
-    width: 35%;
+    width: 500px;
+
     border:2px solid rgb(30, 150, 144);
     background-color: white;
-    margin: auto;
+    margin: 10px auto;
     padding: 30px;
     border-radius: 15px;
     text-align: center;
 
   }
-  label {
-  font-size: 12px;
+  p {
+  font-size: 16px;
+  margin-bottom: 10px;
   }
+
   input{
     border: 1px solid #cccccc;
+  }
+  input[type="button"]{
+    color: lightyellow;
+    background: lightseagreen;
+    padding: 4px;
+    margin: 10px 0px;
+    font-size: 12px;
   }
   input:focus{
     border: 1px solid lightseagreen;
     outline: none;
+  }
+  form h1{
+    margin-bottom: 10px;
   }
 
   input:hover{
@@ -29,8 +48,14 @@
     opacity: .8;
   }
 
-  #nombres{
-    margin-right: 30px ;
+  #nombres,#apellidos{
+    padding: 4px;
+   width: 200px;
+   /* margin-left: 10px; */
+   }
+  #email,#contraseña{
+    padding: 4px;
+    width: 405px;
    }
 
 
@@ -38,6 +63,7 @@
     width: 80%;
 
   }
+
 
   input[type="submit"]{
     width: 50%;
@@ -49,3 +75,6 @@
   h1,p{
     color:lightseagreen ;
   }
+
+
+

@@ -72,8 +72,8 @@ table .monto{
   color: red;
 }
 
-table,td{
-  border: 1px solid #0988ca;
+table,td,th{
+  border: 1px solid #dbd9d6;
 
 }
 table td em{
