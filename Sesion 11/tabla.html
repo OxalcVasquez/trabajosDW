@@ -10,15 +10,17 @@
       Factura entel
     </title>
 </head>
-<body style="font-family: Verdana, Geneva, Tahoma, sans-serif">
-
-  <img src="./img/entel.png" alt="" width="150px">
-  <table border="1" bordercolor="#0988ca">
-    <caption style="font-size: 24px;color:#0988ca;font-weight: bold;">
+<body>
+  <main class="main">
+<!-- <img class="logo" src="./img/entel.png" alt="logo-entel"> -->
+<img src="./img/apertura-tiendas-asesor.png" alt="Asesor entel" class="asesor">
+<div class="factura">
+  <table>
+    <caption>
       <em>
         Factura Telefónica
       </em>
-      </caption>
+    </caption>
     <thead>
       <tr>
         <th colspan="5" class="titulos-col">Entel S.A. - Marzo 2019</th>
@@ -26,46 +28,46 @@
     </thead>
     <tfoot>
       <tr>
-        <td colspan="5" style="font-size: 13px ;color: #0988ca;">
-          <em>
-            Entel informa que puede llamar al número
-            081-808080 para cualquier duda o sugerencia que tenga acerca de esta factura o de número de
-            servicio
-          </em>
-          </td>
-      </tr>
-    </tfoot>
-    <tbody>
-      <tr>
-        <th colspan="5" class="titulos-col" ">Detalle de cuotas</th>
-      </tr>
-      <tr>
-        <th class="sub-col">PERIODO</th>
+        <td colspan="5"">
+                  <em>
+                    Entel informa que puede llamar al número
+                    081-808080 para cualquier duda o sugerencia que tenga acerca de esta factura o de número de
+                    servicio
+                  </em>
+                  </td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <th colspan=" 5" class="titulos-col" ">Detalle de cuotas</th>
+              </tr>
+              <tr>
+                <th class=" sub-col">PERIODO</th>
         <th class="sub-col">CONCEPTO</th>
         <th class="sub-col">IMPORTE</th>
         <th class="sub-col" colspan="2">DESCUENTO</th>
       </tr>
       <tr>
-        <td rowspan="3" style="text-align:center">01/03/19 - 01/04/19</td>
+        <td rowspan="3">01/03/19 - 01/04/19</td>
         <td>Servicio de identifiación de llamadas</td>
-        <td style="text-align:center">S/ 120.00</td>
-        <td colspan="2" style="text-align:center">0</td>
+        <td>S/ 120.00</td>
+        <td colspan="2">0</td>
       </tr>
       <tr>
         <td>Linea Individual</td>
-        <td style="text-align:center">S/ 140.00</td>
-        <td colspan="2" style="text-align:center">0</td>
+        <td>S/ 140.00</td>
+        <td colspan="2">0</td>
       </tr>
       <tr>
         <td>Bono ciudad</td>
-        <td style="text-align:center">S/ 100.00</td>
-        <td colspan="2" style="text-align:center">0</td>
+        <td>S/ 100.00</td>
+        <td colspan="2">0</td>
       </tr>
       <tr>
         <th colspan="5" class="titulos-col"">Detalle de consumo</th>
-      </tr>
-      <tr>
-        <th class="sub-col">CONCEPTO</th>
+              </tr>
+              <tr>
+                <th class=" sub-col">CONCEPTO</th>
         <th class="sub-col">LLAMADAS</th>
         <th class="sub-col">DURACIÓN</th>
         <th class="sub-col">IMPORTE</th>
@@ -86,14 +88,18 @@
         <td>0</td>
       </tr>
       <tr>
-        <td colspan="2" style="text-align:left; font-weight: bold;">TOTAL</td>
-        <td colspan="3" style="text-align:right; font-weight: bold;color: red;">S/165.00</td>
+        <td class="total" colspan="2">TOTAL</td>
+        <td class="monto" colspan="3">S/165.00</td>
       </tr>
 
-    </tbody>
+      </tbody>
 
   </table>
-  <img src="./img/apertura-tiendas-asesor.png" alt="Asesor entel" class="asesor">
+</div>
+  </main>
+
+
+
 
 
 </body>

@@ -1,3 +1,29 @@
+body{
+background: #0988ca;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+body .logo{
+  width: 150px;
+
+}
+.main{
+  height: 450px;
+  background: #fff;
+  width: 90%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+
+body table caption{
+  font-size: 30px;
+  margin: 10px 0px;
+  color:#f85408;
+  font-weight: bold;
+}
+
 .titulos-col{
 
   background-color:#0988ca;
@@ -5,13 +31,52 @@
 .sub-col{
   background-color: #f85408;
 }
+table td em{
+  color: #f85408;
+
+}
 td{
   text-align:center;
+   font-size: 13px ;
+   color: #000;
 }
+body .main .factura{
+ width: 80%;
+  float: left;
+}
+
 table{
+
   position: absolute;
+   border-collapse: collapse ;
+   background: #fff;
+
+
+
 }
 .asesor{
-  width: 15%;
-  float: right;
+  margin: 120px 40px;
+  width: 10%;
+  float: left;
+}
+td,th{
+  padding: 5px 10px;
+}
+table .total{
+  text-align:left;
+   font-weight: bold;
+}
+table .monto{
+  text-align:right;
+  font-weight: bold;
+  color: red;
+}
+
+table,td{
+  border: 1px solid #0988ca;
+
+}
+table td em{
+  color: #f85408;
+
 }
