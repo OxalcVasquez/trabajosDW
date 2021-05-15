@@ -7,7 +7,6 @@
 .grid{
   display: grid;
   width: 95%;
-  /* max-width: 1920px; */
   margin: auto;
   max-width: 1920px;
   grid-template-columns: 4fr 1fr;
@@ -21,22 +20,8 @@
 }
 
 
-/* .grid .header-nombre,
-.grid .menu-nav,
-.grid .sidebar div,
-.grid .main,
-.grid .footer
- {
-  background: #fff;
-  border-radius: 4px;
-  border:1px solid red;
-
-} */
 :root {
- /* --color-1: #0466c8;
-  --color-2: #0353a4;
-   --color-4: #33415c;
-  --color-3: #002855;*/
+
    --color-1: #da1e37;
   --color-2: #e01e37;
    --color-4: #b21e35;
@@ -119,7 +104,6 @@ font-weight: 600;
   text-align: center;
   width: 19.9%;
   padding: 20px;
-  /* border: 1px solid #eee; */
   color: #fff;
 
 }
@@ -127,8 +111,7 @@ font-weight: 600;
 
 .menu-nav  ul li a{
   text-decoration: none;
-  /* display: inline-block; */
-  /* padding: 20px; */
+
   color: #fff;
 }
 
@@ -144,29 +127,7 @@ font-weight: 600;
 
 }
 
-.main h2{
-  margin-top: 10px;
-  margin-bottom: 10px;
 
-}
-
-.main .articulo {
-  float: left;
-  margin-bottom: 10px;
-  text-align: justify;
-  line-height: 27px;
-
-  /* line-height: 27px; */
-
-}
-
-.main img{
-  float: right;
-  width: 30%;
-  margin: 0px 0px 10px 30px;
-
-
-}
 
 .sidebar .menu-aside,  .sidebar .menu-enlaces{
   width: 90%;
@@ -255,6 +216,43 @@ font-weight: 600px;
 
 }
 
+
+.main .formulario{
+  padding: 30px;
+  width: 50%;
+  margin: auto;
+  border-radius: 5px;
+  background: var(--color-2);
+
+
+}
+
+.main .formulario input{
+  display: block;
+
+}
+
+.main .formulario h1{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+
+}
+
+.main .formulario label{
+  display: block;
+  color: #fff;
+  margin: 10px 0px;
+
+}
+
+
+input[type="text"],input[type="password"]{
+  width: 80%;
+  padding: 5px;
+
+}
+
 @media (min-width:600px) and (max-width:1000px) {
   .grid{
      grid-template-areas: "header-nombre header-nombre"
@@ -297,13 +295,7 @@ font-weight: 600px;
     font-size: 14px;
 
   }
-  .main img{
-    float: right;
-    width: 30%;
-    margin-left: 10px;
 
-
-  }
 
   .sidebar .menu-aside,  .sidebar .menu-enlaces{
     width: 40%;
@@ -377,10 +369,7 @@ font-weight: 600px;
   padding: 10px;
   font-size: 12px;
   }
-  .main .articulo p{
-    font-size: 14px;
 
-  }
 
   .menu-nav{
   background: #000;
@@ -397,10 +386,7 @@ font-weight: 600px;
     font-size: 14px;
   }
 
-  .main img{
-   width: 100%;
-   margin: 10px 0;
-  }
+
 
   .sidebar{
     padding: 10px;
