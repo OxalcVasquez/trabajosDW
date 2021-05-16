@@ -117,10 +117,14 @@ font-weight: 600;
 
 
 .menu-nav ul li:hover{
-  background: #7a7f8b;
+  background: #000;
   color: #fff;
 }
 
+.menu-nav ul .contactos-nav{
+  background: #000;
+  color: #fff;
+}
 
 .main{
   padding: 20px;
