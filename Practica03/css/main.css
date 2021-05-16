@@ -165,6 +165,11 @@ font-weight: 600;
 
 }
 
+.main .noticias h2{
+ color: var(--color-3);
+
+}
+
 .main img{
   float: right;
   width: 30%;
@@ -306,7 +311,7 @@ font-weight: 600px;
   }
   .main img{
     float: right;
-    width: 30%;
+    width: 50%;
     margin-left: 10px;
 
 

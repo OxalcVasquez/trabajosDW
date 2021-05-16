@@ -239,7 +239,9 @@ font-weight: 600px;
   border-radius: 10px;
   padding: 5px;
   background: var(--color-2);
-  width: 50%;}
+  width: 40%;
+
+}
 
 .proyectos .caja .boton:hover{
   background: #000;
