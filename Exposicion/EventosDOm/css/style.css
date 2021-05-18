@@ -1,0 +1,7 @@
+.caja {
+  width: 200px;
+  height: 200px;
+  background: #226fc1;
+  margin: 10px;
+  display: inline-block;
+}
