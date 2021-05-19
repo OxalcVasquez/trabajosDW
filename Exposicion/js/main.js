@@ -5,7 +5,7 @@ document.body -> Accedemos al body
 /*Acceder */
 /*Por nombre de etiqueta */
 
-var caja = document.getElementsByTagName('div');
+//var caja = document.getElementsByTagName('div');
  //caja[0].textContent = 'Hola';
 //caja[0].innerHTML = '<h1>Hola</h1>' //incluyendo contenido HTML
 
