@@ -57,4 +57,4 @@ document.body -> Accedemos al body
 
 //Eliminar nodo
 //padre.removeChild(caja4);
-//padre.removeChild(caja[3]);--> Probar en naavegador
+//padre.removeChild(caja[3]);--> Probar en navegador
