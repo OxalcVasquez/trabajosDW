@@ -6,7 +6,7 @@ document.body -> Accedemos al body
 /*Por nombre de etiqueta */
 
 //var caja = document.getElementsByTagName('div');
- //caja[0].textContent = 'Hola';
+//caja[0].textContent = 'Hola';
 //caja[0].innerHTML = '<h1>Hola</h1>' //incluyendo contenido HTML
 
 /*Por clase */
@@ -15,16 +15,16 @@ document.body -> Accedemos al body
 
 /*Por ID */
 
-//var caja1 = document.getElementById('caja1')
+//var caja1 = document.getElementById('caja1');
 //caja1.innerHTML = '<h1>Hola</h1>'
 
 
 //Agregar nodos
 
 //1.- Crear el nodo(elemento)
-//var caja5  = document.createElement('div')
+//var caja5  = document.createElement('div');
 // 2.- Crear uno nodo de texto
-//var contenido = document.createTextNode('Caja 5')
+//var contenido = document.createTextNode('Caja 5');
 // 3.- Añadir el nodo de texto al elemento
 //caja5.appendChild(contenido);// incrustar dentro el texto
 //4.- Agregar atributos a los caja
@@ -57,4 +57,4 @@ document.body -> Accedemos al body
 
 //Eliminar nodo
 //padre.removeChild(caja4);
-//padre.removeChild(caja[3]);--> Probar en navegador
+//padre.removeChild(caja[3]);//--> Probar en navegador
