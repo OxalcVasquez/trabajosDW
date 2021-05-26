@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manjari&display=swap">
+  <link rel="stylesheet" href="css/ejercicio2.css">
+  <title>Agenda</title>
+</head>
+<body>
+
+  <form action="" id="form">
+    <h2>AGENDA</h2>
+    <label for="nombre">Nombres:</label>
+    <input type="text" id="nombre" name="nombre"><br>
+    <!-- <label for="nombres"></label>Password</label>
+    <input type="password"> -->
+    <label for="movil">Num celular:</label>
+    <input type="text" id="movil" name="movil">
+    <input type="button" onclick="guardarDatos()" id="btn-guardar" value="Guardar datos"></input>
+    <p id="datos">Pulsa para ver tu nombre y tu numero celular</p>
+    <input type="button" id="btn-mostrar" onclick="recuperarDatos()" value="Recuperar datos"></input>
+    <p id="datos">Pulsa para recuperar la informacion guardada</p>
+  </form>
+  <script src="js/ejerciciolocal.js"></script>
+</body>
+</html>
