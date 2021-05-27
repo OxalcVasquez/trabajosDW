@@ -12,13 +12,12 @@ function recuperarDatos(){
   const nombre = document.getElementById('nombre').value;
   localStorage.getItem(nombre);
   document.getElementById('movil').value = localStorage.getItem(nombre);
-  console.log("holaaa");
+
 }
 
 function eliminarDatos() {
   const nombre = document.getElementById("nombre").value;
   localStorage.removeItem(nombre);
-  console.log('holaaa');
   actualizarDatos();
 }
 function eliminarTodo() {

@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 40%;
+  margin: 10px auto;
+}
+form{
+  width: red;
+}
+
+.formGroup{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.formGroup button{
+  margin-left: 5px;
+}
+
+.container form input[type=text]{
+padding: 2px;
+}
+
+.container form input[type=email]{
+  padding: 5px;
+}
+
+.container form label{
+  display:block;
+  width: 20%;
+}
+
