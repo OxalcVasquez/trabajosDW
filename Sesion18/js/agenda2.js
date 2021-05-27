@@ -1,22 +1,24 @@
 function guardarDatos(){
-  var nombre = document.getElementById('nombre'.value);
-  var movil = document.getElementById("movil".value);
+  const nombre = document.getElementById('nombre').value;
+  const movil = document.getElementById('movil').value;
   localStorage.setItem(nombre,movil);
   document.getElementById('nombre').value='';
    document.getElementById('movil').value = '';
    actualizarDatos();
+
 }
 
 function recuperarDatos(){
-  var nombre = document.getElementById("nombre".value);
-  localStorage.getItem('nombre');
-  document.getElementById('moviil').value = localStorage.getItem(nombre);
-
+  const nombre = document.getElementById('nombre').value;
+  localStorage.getItem(nombre);
+  document.getElementById('movil').value = localStorage.getItem(nombre);
+  console.log("holaaa");
 }
 
 function eliminarDatos() {
-  var nombre = document.getElementById("nombre".value);
+  const nombre = document.getElementById("nombre").value;
   localStorage.removeItem(nombre);
+  console.log('holaaa');
   actualizarDatos();
 }
 function eliminarTodo() {
@@ -26,12 +28,12 @@ function eliminarTodo() {
 
 function actualizarDatos(){
   var registro = "";
-  if(localStorage.length ==0){
-    registro += "<li>Vació</li>"
+  if(localStorage.length === 0){
+    registro += "<li>Vació</li>";
   }else{
     for (var i=0; i <=localStorage.length -1;i++){
       var key = localStorage.key(i);
-      registro += '<li> +<span class="nom">' + key +'</span>'
+      registro += '<li>' +'<span class="nom">' + key +'</span>'
       +'<span class="nom">' + localStorage.getItem(key) +'</span>' + '</li><br>';
     }
     document.getElementById('contactos').innerHTML = registro;
