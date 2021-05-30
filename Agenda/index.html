@@ -8,14 +8,17 @@
   <title>Agenda</title>
 </head>
 <body>
+
   <div class="container">
+    <h2>Agenda Personal</h2>
+    <!-- <img src="./img/age.png" alt=""> -->
     <form action="" id="formAgenda">
       <div class="formGroup">
         <label for="nombre">Nombre: </label>
         <input type="text" name="nombre" id="nombre">
       </div>
       <div class="formGroup">
-        <label for="nombre">Num celular: </label>
+        <label for="movil">Num celular: </label>
         <input type="text" name="movil" id="movil">
       </div>
       <div class="formGroup">
@@ -23,10 +26,10 @@
         <input type="email" name="email" id="email">
       </div>
       <div class="formGroup">
-        <button type="submit">Guardar</button>
-        <button type="button">Recuperar</button>
-        <button type="button">Eliminar</button>
-        <button type="button">Eliminar todos</button>
+        <button type="submit" class="btn btnGuardar">Guardar</button>
+        <button type="button" class="btn btnRecuperar" onclick="recuperarContacto()">Recuperar</button>
+        <!-- <button type="button">Eliminar</button> -->
+        <button type="button"  class="btn btnTodos"onclick="eliminarTodo()">Eliminar todos</button>
       </div>
       <div id="contactos" class="formContenido">
       </div>

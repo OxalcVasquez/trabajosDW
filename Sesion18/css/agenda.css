@@ -12,16 +12,40 @@ h3{
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
   margin-bottom: 8px;
+  text-align: center;
 }
+
 
 .contenedor{
 /* height: 300px; */
+/* width: 500px; */
   margin: 10px auto;
   background: #faf9f9;
   padding: 20px;
   border-radius: 10px;
-  width: 400px;
+  width: 30%;
 
+}
+
+.formGroup{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.formGroup button{
+  margin-left: 2px;
+}
+
+form input[type=text]{
+ width: 70%;
+padding: 2px;
+margin-left: 4px;
+}
+form input[type=email]{
+ width: 70%;
+padding: 2px;
+margin-left: 4px;
 }
 
 button{
@@ -33,6 +57,32 @@ span{
   display: block;
   float: left;
   padding-left: 4px;
+}
+
+.btn{
+  width: 20%;
+  padding: 4px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+
+
+}
+.contenedor-btn{
+  display: flex;
+  justify-content: space-between;
+}
+.btnGuardar{
+  background:#90be6d ;
+}
+
+.btnRecuperar{
+  background:#f8961e;
+}
+
+.btnTodos,.btnEliminar{
+  background:#f94144;
+
 }
 
 .nom{

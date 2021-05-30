@@ -7,15 +7,21 @@
 .container{
   font-family: Arial, Helvetica, sans-serif;
   margin: 10px auto;
-  width: 500px;
-   background: #ff7900;
+  width: 30%;
+   background: #577590;
    padding: 20px;
    border-radius: 4px;
    color: #fff;
 }
-
+h2{
+  /* float: left; */
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
 .formGroup{
   display: flex;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -24,13 +30,17 @@
 }
 
 .container form input[type=text]{
+ width: 70%;
 padding: 2px;
 margin-left: 4px;
 }
 .container form input[type=email]{
+ width: 70%;
 padding: 2px;
 margin-left: 4px;
 }
+
+
 
 .container form label{
   display:block;
@@ -45,7 +55,38 @@ margin-left: 4px;
   margin-bottom: 4;
   color: #000;
 }
-.formContenido{
+.btn{
+  width: 30%;
+  padding: 4px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
 
+
+}
+.btnGuardar{
+  background:#90be6d ;
+}
+
+.btnRecuperar{
+  background:#f8961e;
+}
+
+.btnTodos{
+  background:#f94144;
+
+}
+
+.btnEliminar{
+  font-size: 14px;
+  width: 20%;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 3px;
+  margin-top: 10px;
+  background: #f94144;
+  border-radius: 3px;
+  margin-left: auto;
 }
 

@@ -17,16 +17,20 @@
       <h3>Mi Agenda de contactos</h3>
     </header>
     <form action="">
-      <span>Nombres :</span>
-      <input type="text" id="nombre"> <br><br>
-      <span>Num celular :</span>
-      <input type="text" id="movil">
+      <div class="formGroup">
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre">
+      </div>
+      <div class="formGroup">
+        <label for="movil">Num celular: </label>
+        <input type="text" name="movil" id="movil">
+      </div>
     </form>
-    <div>
-      <button type="button" onclick="guardarDatos()">Guardar</button>
-      <button type="button" onclick="recuperarDatos()">Recuperar</button>
-      <button type="button" onclick="eliminarDatos()">Eliminar</button>
-      <button type="button" onclick="eliminarTodo()">Eliminar todos</button>
+    <div class="formGroup">
+      <button type="button" class="btn btnGuardar"onclick="guardarDatos()">Guardar</button>
+      <button type="button" class="btn btnRecuperar"onclick="recuperarDatos()">Recuperar</button>
+      <button type="button" class="btn btnEliminar"onclick="eliminarDatos()">Eliminar</button>
+      <button type="button" class="btn btnTodos"onclick="eliminarTodo()">Eliminar todos</button>
     </div>
     <hr>
     <span class="titu">Nombre</span>
