@@ -9,20 +9,20 @@ function saveContacto(e) {
     movil,
     email,
   };
-
-  if (localStorage.getItem("contactos") === null) {
-    const contactos = [];
-    contactos.push(contacto);
-    localStorage.setItem("contactos", JSON.stringify(contactos));
-  } else {
-    //obtener los contactos antes guardados
-    const contactos = JSON.parse(localStorage.getItem("contactos"));
-    contactos.push(contacto);
-    localStorage.setItem("contactos", JSON.stringify(contactos));
-    document.getElementById("formAgenda").reset();
-    e.preventDefault(); //no se refresque
-  }
-  getContacto();
+  console.log(nombre.value);
+     if (localStorage.getItem("contactos") === null) {
+       const contactos = [];
+       contactos.push(contacto);
+       localStorage.setItem("contactos", JSON.stringify(contactos));
+     } else {
+       //obtener los contactos antes guardados
+       const contactos = JSON.parse(localStorage.getItem("contactos"));
+       contactos.push(contacto);
+       localStorage.setItem("contactos", JSON.stringify(contactos));
+       document.getElementById("formAgenda").reset();
+       e.preventDefault(); //no se refresque
+     }
+   getContacto();
 }
 function recuperarContacto() {
   console.log("hol");
@@ -74,7 +74,7 @@ function getContacto() {
        contactosView.innerHTML += `
       <div class="contacto-card">
         <div class="card-body">
-          <p>${nombre} - ${movil} - ${email} </p>
+          <p>${nombre}  -  ${movil}  -  ${email} </p>
           <a class="btnEliminar" onclick="eliminarContacto('${nombre}')">Eliminar </a>
         </div>
       </div>`;
