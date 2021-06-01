@@ -1,0 +1,123 @@
+.cuadrado {
+  width: 100px;
+  height: 100px;
+  background: crimson;
+  margin-left: 20px;
+}
+
+.rombo {
+  width: 100px;
+  height: 100px;
+  background: cornflowerblue;
+  transform: rotate(45deg);
+  margin-left: 20px;
+}
+
+.paralelogramo {
+  width: 200px;
+  height: 100px;
+  background: seagreen;
+  transform: skew(20deg);
+  margin-left: 20px;
+}
+
+
+.triangulo {
+  width: 0px;
+  height: 0px;
+  /* background: cornflowerblue; */
+  border-left: 50px solid  transparent;
+  border-top: 50px solid lightsalmon;
+  border-right: 50px solid  transparent;
+  border-bottom: 50px solid  transparent;
+  margin-left: 20px;
+
+}
+
+.circulo1 {
+  width: 100px;
+  height: 100px;
+  background: thistle;
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.circulo2 {
+  width: 0px;
+  height: 0px;
+  background: yellow;
+  margin-left: 20px;
+  border-radius: 50%;
+  border-left: 50px solid  seagreen;
+  border-top: 50px solid lightsalmon;
+  border-right: 50px solid  sienna;
+  border-bottom: 50px solid  springgreen;
+}
+
+.diamante {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  background: lightslategray;
+  clip-path: polygon(0% 20%,20% 0% ,80% 0%,100% 20%,50% 100%);
+}
+
+
+.prueba {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  background: lime;
+  clip-path: polygon(0% 20%,20% 0% ,80% 0%,100% 20%,50% 80%);
+}
+
+.animado{
+  width: 40%;
+  transition: all 1s;
+  clip-path: polygon(0 0,100% 0,100% 100%, 0% 100%);
+}
+
+.animado:hover{
+   clip-path: polygon(50% 0,100% 50%,50% 100%, 0% 50%);
+}
+
+
+
+.corazon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-30%) rotate(-45deg);
+  background: red;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+
+.banda{
+  position: absolute;
+  width: 170%;
+  height: 15%;
+  background: white ;
+  top : 35%;
+  left: -10px;
+  z-index: 1; /*se sobrepone*/
+}
+
+.corazon::before,.corazon::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: red;
+}
+
+.corazon::before{
+  left: 50%;
+}
+
+.corazon::after{
+  top: -50%;
+}
+
+

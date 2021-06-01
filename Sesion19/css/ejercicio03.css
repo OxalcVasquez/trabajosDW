@@ -1,0 +1,40 @@
+p{
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-duration: alternate;
+
+  /* Alternativa */
+  animation: 3s infinite alternate slidein;
+}
+
+@keyframes slidein {
+  /* from{
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  } */
+
+  0%{
+    margin-left: 100%;
+    width: 300%;
+  }
+  30%{
+    background: lightseagreen;
+  }
+  60%{
+    background: crimson;
+  }
+  100%{
+    margin-left: 0%;
+    width: 100%;
+  }
+
+}
+
+body{
+  overflow: hidden;
+}

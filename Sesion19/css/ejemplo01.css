@@ -1,0 +1,46 @@
+.pf1::first-letter {
+  font-size: 2rem;
+}
+.pf2::first-letter {
+  float: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 400%;
+  font-weight: bolder;
+  margin-right: 15px;
+
+}
+
+.seudoEle{
+  border: 2px solid black;
+  width: 10%;
+  text-align: center;
+}
+
+
+.seudoEle::before{
+  content: 'Hola';
+background: red;
+}
+
+
+.seudoEle::after{
+  content: 'Perú';
+background: red;
+}
+
+.seudoCla:hover{
+  background: royalblue;
+}
+
+a:hover{
+  background: papayawhip;
+}
+
+a:focus{
+  color: coral;
+}
+
+
+a:active{
+  color: cadetblue;
+}
