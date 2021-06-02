@@ -1,0 +1,251 @@
+.fan1 {
+  background: #8e44ad;
+  color : #fff;
+  padding: .2rem .3rem 1rem .3rem;
+  position: absolute;
+  border-radius: 2rem 2rem 0 0;
+  animation: animar;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  margin-left: .4rem;
+}
+
+.fan2 {
+  background: blue;
+  color : #fff;
+  padding: .2rem .3rem 1rem .3rem;
+  position: absolute;
+  border-radius: 2rem 2rem 0 0;
+  animation: animar2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  margin-left: .4rem;
+}
+
+/* .bolita{
+  width: 0.05rem;
+  position: relative;
+  padding: 1rem;
+  background: yellow;
+  border-radius: 50%;
+  animation: ball;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  margin-left: .4rem;
+
+}
+.pacman{
+  position: relative;
+}
+.boca{
+  width: 0.05rem;
+  position: absolute;
+  padding: 1rem;
+  background: #000;
+  border-radius: 50%;
+  animation: ball;
+  animation-duration: 10s;
+  clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+} */
+img{
+  width: 30%;
+}
+
+@keyframes animar{
+  0%{
+    left :0;
+    top : 0;
+  }
+  10% {
+    left : 6rem;
+    top : 0rem;
+    color: #9b59b6;
+  }
+  20% {
+    top : 5rem;
+    left : 6rem;
+    color: #fff;
+  }
+
+  30% {
+    left : 6rem;
+    top : 6rem;
+    color: #9b59b6;
+  }
+
+   30% {
+    left : 18rem;
+    top : 6rem;
+    color: #fff;
+  }
+
+   40% {
+    left : 18rem;
+    top : 22rem;
+    color: #fff;
+  }
+
+  50% {
+    left : 13rem;
+    top : 22rem;
+    color: #fff;
+  }
+
+  60% {
+    left : 13rem;
+    top : 24rem;
+    color: #fff;
+  }
+   70% {
+    left : 18rem;
+    top : 24rem;
+    color: #fff;
+  }
+   75% {
+    left : 18rem;
+    top : 28rem;
+    color: #fff;
+  }
+   80% {
+    left : 23rem;
+    top : 28rem;
+    color: #fff;
+  }
+
+  90% {
+    left : 23rem;
+    top : 30rem;
+    color: #fff;
+  }
+  100% {
+    left : 0rem;
+    top : 30rem;
+    color: #fff;
+  }
+
+  100% {
+    /* left : 0;
+    top : 0; */
+  }
+}
+
+@keyframes animar2{
+  0%{
+    left :0;
+    top : 0;
+  }
+  10% {
+    left : 0rem;
+    top : 6rem;
+    color: blue;
+  }
+  20% {
+    top : 6rem;
+    left : 6rem;
+    color: #fff;
+  }
+
+  30% {
+    left : 6rem;
+    top : 22rem;
+    color: blue;
+  }
+  40% {
+    left : 11rem;
+    top : 22rem;
+    color: blue;
+  }
+   50% {
+    left : 11rem;
+    top : 24rem;
+    color: rgb(138, 138, 219);
+  }
+   60% {
+    left : 16rem;
+    top : 24rem;
+    color: #fff;
+  }
+   70% {
+    left : 16rem;
+    top : 28rem;
+    color: rgb(138, 138, 219);
+  }
+  80% {
+    left : 13rem;
+    top : 28rem;
+    color: #fff;
+  }
+   90% {
+    left : 13rem;
+    top : 30rem;
+    color: rgb(138, 138, 219);
+  }
+
+   100% {
+    left : 0rem;
+    top : 30rem;
+    color: rgb(138, 138, 219);
+  }
+
+
+
+}
+/*
+@keyframes ball{
+0%{
+  left :0;
+  top : 0;
+}
+10% {
+  left : 0rem;
+  top : 6rem;
+  color: blue;
+}
+20% {
+  top : 6rem;
+  left : 6rem;
+  color: #fff;
+}
+
+30% {
+  left : 6rem;
+  top : 22rem;
+  color: blue;
+}
+40% {
+  left : 11rem;
+  top : 22rem;
+  color: blue;
+}
+ 50% {
+  left : 11rem;
+  top : 24rem;
+  color: rgb(138, 138, 219);
+}
+ 60% {
+  left : 16rem;
+  top : 24rem;
+  color: #fff;
+}
+ 70% {
+  left : 16rem;
+  top : 28rem;
+  color: rgb(138, 138, 219);
+}
+80% {
+  left : 13rem;
+  top : 28rem;
+  color: #fff;
+}
+ 90% {
+  left : 13rem;
+  top : 30rem;
+  color: rgb(138, 138, 219);
+}
+
+ 100% {
+  left : 0rem;
+  top : 30rem;
+  color: rgb(138, 138, 219);
+}
+} */
