@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+  <title>AniJS</title>
+</head>
+<body>
+<div class="container">
+  <h1 data-anijs="if: dblclick, do: rubberBand animated, to: body">AniJS</h1>
+  <div data-anijs="if: click, do: flipInY animated, to: .container-par" class="container-par">
+    <img src="img/anijs-tutsplus.png" alt="">
+    <p>
+      AniJS nos permite crear estilos animados para nuestros sitio web,Podemos especificar todas las animaciones desde
+      HTML
+      usando una simple sintaxis If-On-Do-To.
+    </p>
+  </div>
+  <div class="container-cajas">
+    <div class="orange box" data-anijs="if: mouseover, do: swing animated"></div>
+    <div class="pink box" data-anijs="if: click, do: tada animated"></div>
+    <div class="red box" data-anijs="if: dblclick, do: rubberBand animated"></div>
+    <div class="purple box" data-anijs="if: mousemove, do: shake animated"></div>
+    <div class="black box" data-anijs="if: mouseover, on: body div.green, do: flash animated"></div>
+    <div class="green box" data-anijs="if: mouseover, on: div.brown, do: fadeIn animated"></div>
+    <div class="yellow box" data-anijs="if: dblclick, on: .container-cajas, do: bounce animated"></div>
+    <div class="brown box" data-anijs="if: click, on: div, do: wobble animated"></div>
+  </div>
+  <div class="contenido"  data-anijs="if: click, do: rollIn animated, to: $children .contenido">
+    <h1>Sintaxis de AniJS</h1>
+    <p>
+      <b  data-anijs="if: mouseover, do: swing animated">If</b>
+      especifica el evento que activará la animación o la manipulación de la clase. <br>La parte <b>On</b> especifica
+      el elemento
+      cuyos eventos AniJS debe escuchar. Esto puede ser diferente del elemento en el que has configurado el atributo
+      data-anijs.<br> La parte <b>Do</b> especifica la acción a realizar. Aquí, puedes especificar el nombre de la
+      animación que
+      quieres aplicar, etc. <br>Por último, la parte <b>To</b> se utiliza para especificar el elemento que necesita ser
+      animado o
+      manipulado.
+    </p>
+    <p>
+      También podemos utilizar los ganchos Before y After para especificar lo que debería ocurrir antes y después de que
+      AniJS haga lo mencionado dentro de la parte Do.
+    </p>
+    <p>
+      AniJS nos permite ejecutar una animación activándola en cualquier evento aplicable incluido en la documentación siguiente <a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">MDN</a>.
+    </p>
+    <div class="container-img">
+      <img data-anijs="if: mouseover, do: wobble animated, to: .container-img" src="img/code.png" alt="">
+    </div>
+
+  </div>
+  <div class="contenido-elementos">
+    <h2 >
+      Manipulando clases y elementos de HTML
+    </h2>
+    <p data-anijs="if: click, do: flip animated, to:  target, after: $removeAnim">
+      AniJS te permite hacer más que simplemente animar diferentes elementos. Por ejemplo, puede utilizarlo para agregar,
+      eliminar o alternar clases aplicadas en diferentes elementos. Asimismo, también puedes eliminar elementos HTML o
+      clonarlos sin añadir una sola línea de JavaScript. La biblioteca también te permite recorrer el DOM usando palabras
+      clave reservadas especiales.
+    </p>
+      <h3 data-anijs="if: mouseover, do: rollOut animated, to: .datos, after: $removeAnim" class="datos">Manipulacion de
+        clases</h3>
+      <p data-anijs="if: click, do: flipInY animated, to: .mp" class="mp">
+      AniJS tiene tres palabras clave reservadas para manipular clases. Estas
+      son <b>$addClass, $removeClass y $toggleClass.</b>
+      De la misma manera, puedes usar palabras clave reservadas como
+      <b>$parent, $ancestors, $closest, $find y $children</b> para recorrer el DOM.
+      Podemos utilizar estos dos conjuntos de palabras clave reservadas para hacer algo, como añadir una determinada clase a
+      todos los elementos children de un elemento, después de que un visitante haga doble clic en ese elemento en particular.
+      </p>
+  </div>
+  <div class="ejemplos">
+    <h3>Ejemplos prácticos</h3>
+    <a href="modal.html" class="ejemplos-btn">Notificación</a>
+  </div>
+</div>
+
+  <!-- Llamando a la libreria -->
+  <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
+
+  <!-- Incluir uso de $addClass, $toggleClass or $removeClass -->
+  <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+
+</body>
+</html>
