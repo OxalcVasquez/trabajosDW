@@ -1,0 +1,54 @@
+body {
+  margin: 80px auto;
+  width: 600px;
+  border: 10px solid black;
+  text-align: center;
+  padding: 50px 0;
+  transition: 0.5s all;
+  background: #e63946;
+}
+
+body.yellow {
+  border-radius: 50% 10%/10% 50%;
+  background: #e9c46a;
+}
+
+.box.yellow {
+  border-radius: 50% 10%/10% 50%;
+  background: #e9c46a;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: black;
+  display: inline-block;
+  margin: 10px;
+  transition: 0.5s all;
+}
+
+.orange {
+  background: #2a9d8f;
+}
+
+.box.second {
+  padding: 50px 20px;
+  border: 2px solid black;
+}
+
+span.shells {
+  border: 2px solid #e63946;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 4px;
+  transition: 0.5s all;
+}
+
+span.shells.red {
+  background: #e63946;
+  border-radius: 0;
+  transform: rotateZ(30deg);
+}
