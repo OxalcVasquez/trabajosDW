@@ -26,7 +26,7 @@
   padding: 8px 15px;
   font-size: 100%;
   font-weight: 100;
-  cursor: pointer;
+  cursor: pointer; /*Manito*/
   display: inline-block;
   margin: 0px;
   position: relative;
@@ -37,10 +37,10 @@
   cursor: pointer;
 }
 
-.active + p {
+.active + p { /*Aplicara a los p que sigan la clase .active -combinador de hermanos ad*/
   display: block;
 }
-/*End CSS example*/
+
 
 /*Other CSS*/
 body{

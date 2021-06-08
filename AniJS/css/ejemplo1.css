@@ -8,12 +8,19 @@ body {
   background: #e63946;
 }
 
-body.yellow {
+body.amarillo {
   border-radius: 50% 10%/10% 50%;
+  /*Primer radio arribaizquierda-abajoderecha arribaderecha-abajoizquierda*/
+  /*Segundo radio arribaizquierda-abajoderecha arribaderecha-abajoizquierda* */
+  /*lo mismo*/
+  /* border-top-left-radius:     50% 10%;
+  border-top-right-radius:    10% 50%;
+  border-bottom-right-radius: 50% 10%;
+  border-bottom-left-radius:  10% 50%; */
   background: #e9c46a;
 }
 
-.box.yellow {
+.box.amarillo {
   border-radius: 50% 10%/10% 50%;
   background: #e9c46a;
 }
@@ -28,8 +35,8 @@ body.yellow {
   transition: 0.5s all;
 }
 
-.orange {
-  background: #2a9d8f;
+.naranja {
+  background: #f4a261;
 }
 
 .box.second {
@@ -47,7 +54,7 @@ span.shells {
   transition: 0.5s all;
 }
 
-span.shells.red {
+span.shells.rojo {
   background: #e63946;
   border-radius: 0;
   transform: rotateZ(30deg);

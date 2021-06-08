@@ -1,0 +1,63 @@
+/*The CSS example*/
+.item{
+  padding: 100px;
+  color: white;
+  width: 70px;
+  text-align: center;
+  font-size: 3em;
+  display: inline-block;
+  margin-right:10px;
+  margin-top: 10px;
+}
+
+
+.azul{
+  background-color: #3498db;
+}
+.rojo{
+  background-color: #e63946;
+}
+
+.amarillo{
+  background-color: #ffba08;
+}
+
+.naranja{
+  background-color: #e85d04;
+}
+.morado {
+  background-color:#480ca8 ;
+}
+.verde{
+  background-color:#55a630;
+}
+.negro{
+  background-color: #000;
+}
+.contenido p{
+  color: #888;
+  padding: 40px 0;
+}
+
+
+
+/*End CSS example*/
+
+/*Other CSS*/
+body{
+  font-family: helvetica;
+  font-size: 1.2em;
+}
+
+.centrar{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  width: 50%;
+}
+
+.contenido{
+  margin-top: 50px;
+}
+
