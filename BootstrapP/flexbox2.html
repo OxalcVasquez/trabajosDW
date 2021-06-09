@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/flex.css">
+  <title>Flexbox</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row my-4">
+      <div class="col">
+        <h4>Aling Items</h4>
+        <hr>
+        <p>.align-items-star</p>
+        <div class="contenedor d-flex align-items-start">
+          <div> Caja 1</div>
+          <div> Caja 2</div>
+          <div> Caja 3</div>
+        </div>
+        <p>.align-items-center</p>
+        <div class="contenedor d-flex align-items-center">
+          <div> Caja 1</div>
+          <div> Caja 2</div>
+          <div> Caja 3</div>
+        </div>
+        <p>.align-items-end</p>
+        <div class="contenedor d-flex align-items-end">
+          <div> Caja 1</div>
+          <div> Caja 2</div>
+          <div> Caja 3</div>
+        </div>
+        <p>.align-items-stretch</p>
+        <div class="contenedor d-flex align-items-stretch">
+          <div> Caja 1</div>
+          <div> Caja 2</div>
+          <div> Caja 3</div>
+        </div>
+      </div>
+    </div>
+    <div class="row my-4">
+      <div class="col">
+        <h4>Align Self</h4>
+        <div class="contenedor d-flex">
+          <div class="align-self-start">Caja</div>
+          <div class="align-self-center">Caja</div>
+          <div class="align-self-end">Caja</div>
+          <div class="align-self-baseline">Caja</div>
+          <div class="align-self-stretch">Caja</div>
+        </div>
+      </div>
+      </div>
+      <div class="row my-4">
+        <div class="col">
+          <h4>Auto Margins</h4>
+          <div class="contenedor d-flex justify-content-end">
+            <div class="me-auto">.me-auto</div>
+            <div>Caja 2</div>
+            <div>Caja 3</div>
+          </div>
+          <div class="contenedor d-flex justify-content-start">
+            <div class="ms-auto">.ms-auto</div>
+            <div>Caja 2</div>
+            <div>Caja 3</div>
+          </div>
+          <div class="contenedor d-flex flex-column aling-items-start" style="height: 250px;">
+            <div class="mb-auto">.mb-auto</div>
+            <div>Caja 2</div>
+            <div>Caja 3</div>
+          </div>
+        </div>
+      </div>
+      <!--
+      ml-* => ms-*
+      pl-* => ps-*
+      mr-* => me-*
+      pr-* => pe-*
+      text-left => text-start
+      text-right=> text-end
+      float-left => float-start
+      float-right=> float-end
+      border-left => border-start
+      border-right=> border-end
+      rounded-left => rounded-start
+      rounded-right=> rounded-end
+      dropleft => dropstart
+      dropright=> dropend
+      dropdown-menu--left => dropdown-menu--start
+      dropdown-menu--right => dropdown-menu--end
+      carousel-item-left => carousel-item-start
+      carousel-item-right=> carousel-item-end
+
+
+       -->
+    </div>
+  </div>
+</body>
+  <!-- Variantes:
+      .align-items-start
+      .align-items-end
+      .align-items-center
+      .align-items-baseline
+      .align-items-stretch
+      .align-items-sm-start
+      .align-items-sm-end
+      .align-items-sm-center
+      .align-items-sm-baseline
+      .align-items-sm-stretch
+      .align-items-md-start
+      .align-items-md-end
+      .align-items-md-center
+      .align-items-md-baseline
+      .align-items-md-stretch
+      .align-items-lg-start
+      .align-items-lg-end
+      .align-items-lg-center
+      .align-items-lg-baseline
+      .align-items-lg-stretch
+      .align-items-xl-start
+      .align-items-xl-end
+      .align-items-xl-center
+      .align-items-xl-baseline
+      .align-items-xl-stretch
+    -->
+</html>
