@@ -1,0 +1,31 @@
+#principal{
+  margin: 0px auto;
+  max-width: 1000px;
+  min-height: 100vh;
+
+}
+
+
+.encabezado{
+
+  background: #264653;
+}
+.menu{
+
+  background: #2a9d8f;
+
+
+}
+.seccion-contenido{
+
+  background: #e9c46a;
+
+}
+.menu-lateral{
+  background: #f4a261;
+
+
+}
+.pie{
+  background: #e63946;
+}
