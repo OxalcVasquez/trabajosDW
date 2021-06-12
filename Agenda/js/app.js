@@ -9,7 +9,9 @@ function saveContacto(e) {
     movil,
     email,
   };
+
   console.log(nombre.value);
+
      if (localStorage.getItem("contactos") === null) {
        const contactos = [];
        contactos.push(contacto);
@@ -23,6 +25,13 @@ function saveContacto(e) {
        e.preventDefault(); //no se refresque
      }
    getContacto();
+
+  localStorage.setItem(nombre, JSON.stringify(datos));
+  document.getElementById("nombre").value = "";
+  document.getElementById("movil").value = "";
+  document.getElementById("email").value = "";
+
+
 }
 function recuperarContacto() {
   console.log("hol");

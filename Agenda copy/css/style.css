@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #0b1e33;
+
+}
+.container{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px auto;
+  width: 30%;
+   background: #2b2b2b;
+   padding: 20px;
+   border-radius: 4px;
+   color: #fff;
+}
+h2{
+  /* float: left; */
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.formGroup{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.formGroup button{
+  margin-left: 2px;
+}
+
+.container form input[type=text]{
+ width: 70%;
+padding: 2px;
+margin-left: 4px;
+}
+.container form input[type=email]{
+ width: 70%;
+padding: 2px;
+margin-left: 4px;
+}
+
+
+
+.container form label{
+  display:block;
+  width: 30%;
+}
+.contacto-card{
+ margin-bottom: 10px;
+}
+.card-body{
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 4px;
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn{
+  width: 30%;
+  padding: 4px;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+
+
+}
+.btnGuardar{
+  background:#acb843 ;
+}
+
+.btnRecuperar{
+  background:#f8961e;
+}
+
+.btnTodos{
+  background:#f94144;
+
+}
+
+.contacto-tbl{
+  display: flex;
+  background: #f94144;
+  color: #fff;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.btnEliminar{
+  font-size: 14px;
+  width: 20%;
+  color: #fff;
+  text-align: center;
+  display: block;
+  padding: 3px;
+  margin-top: 20px;
+  background: #f94144;
+  border-radius: 3px;
+  margin-left: auto;
+}
+
