@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+   background: #222 url(../img/marliese-streefland-2l0CWTpcChI-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  position: relative;
+}
+
+nav {
+  position : absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 60px 0 60px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+nav li span {
+  padding: 5px;
+}
+
+li a {
+  padding: 5px;
+  background: #fff;
+  text-decoration: none;
+  color: #222;
+}
+.car i{
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.car a{
+  background: royalblue;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 100px
+
+}
+
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.add-car{
+  position: absolute;
+  width: 100%;
+  background: darkgray;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.image:hover .car1,
+.image:hover .car2,
+.image:hover .car3,
+.image:hover .car4
+{
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+
+}
