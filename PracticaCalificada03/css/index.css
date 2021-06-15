@@ -1,0 +1,29 @@
+.text-white{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+
+li{
+    list-style: none;
+    padding: 10px;
+    top: 20px;
+    position: relative;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+.col-md-2{
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: auto;
+}
