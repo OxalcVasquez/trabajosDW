@@ -1,0 +1,62 @@
+
+
+header nav div a i{
+  vertical-align: bottom;
+  font-size: 24px;
+  padding-right: 10px;
+  color: black;
+}
+
+#logoimg{
+    width: 60px;
+    height: 60px;
+}
+
+.aside-lateral{
+background: #000;
+height: 100%;
+}
+
+.aside-lateral ul {
+background: #000;
+}
+
+.aside-lateral ul li{
+  list-style: none;
+ padding: 20px;
+
+
+
+}
+
+.aside-lateral ul li a{
+  text-decoration: none;
+  color: #fff;
+
+}
+
+
+.aside-lateral ul li:hover{
+ background: rgb(255, 174, 0);
+
+
+
+}
+
+
+footer i{
+    font-size:  20px;
+}
+footer li{
+    list-style: none;
+    padding: 10px;
+    top: 20px;
+    position: relative;
+}
+footer a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+
+
+}
