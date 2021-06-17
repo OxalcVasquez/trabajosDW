@@ -44,9 +44,9 @@ function getContacto() {
   contactosView.innerHTML = " "; // limpio en caso exista nuevo datos
   if (localStorage.legth != 0) {
     for (let i = 0; i < localStorage.length; i++) {
-      const key= localStorage.key(i);
+      const key = localStorage.key(i);
       const contactos = localStorage.getItem(key);
-    const contactosA= JSON.parse(contactos);
+      const contactosA = JSON.parse(contactos);
       const nombre = key;
       const movil = contactosA.movil;
       const email = contactosA.email;

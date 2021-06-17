@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(0, 0, 0, .8);
+  color: rgba(200, 200, 200, .9);
+}
+
+.container{
+  height: 100vh;
+  width: 70vw;
+  margin: 2rem auto;
+}
+
+.container h2{
+  text-align: center;
+  margin-bottom: 2rem;
+  /* 20px */
+  font-size: 2.5rem; /*25px*/
+
+}
+
+.formulario {
+  display: block;
+  width: 50%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column ;
+}
+
+.formulario input{
+margin: 1rem 0rem;
+line-height: 3rem;
+background: none;
+outline: none;
+border:0;
+color: #fff;
+
+}
+
+.formulario input:active,.formulario input:focus{
+  border-bottom: 1px solid dodgerblue;
+}
+
+.formulario button{
+margin: 0.5rem 0rem;
+/* background: dodgerblue; */
+border: 0;
+outline: 0;
+height: 3rem;
+border-radius: 4px;
+   color: #fff;
+
+}
+
+.btnGuardar{
+  background:#acb843 ;
+}
+
+.btnRecuperar{
+  background:#f8961e;
+}
+
+.btnTodos{
+  background:#f94144;
+
+}
+
+.listado{
+  display: flex;
+  flex-direction: column;
+}
+
+.contactos{
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+.btnEliminar{
+  color: #f94144;
+  cursor: pointer;
+}
