@@ -1,0 +1,39 @@
+.productos-title{
+  background: #222;
+  color: #fff;
+border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#btn{
+  position: absolute;
+  right: 10px;
+
+}
+
+#t{
+    background-color: #222;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#t-1{
+    padding: 10px 10px 10px 15px;
+    color: white;
+}
+
+#t-2{
+  background-color: #222;
+  border-radius: 8px 8px 0px 0px;
+  margin: 0px -13px 0px -13px;
+}
+#espacio{
+    margin-left: 30%;
+}
+
+#btns{
+  margin-top: 8%;
+}
+
+#ccc{
+  width: 40%;
+}

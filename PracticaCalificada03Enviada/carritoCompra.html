@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/compra.css">
+  <script src="https://kit.fontawesome.com/33a0d02645.js" crossorigin="anonymous"></script>
+  <title>INICIO</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <header>
+        <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="img/Logo-1.1.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+              FERRETERIA IRON
+              <div class="car-perfil">
+                <a href="">
+                  <i class="fas fa-user"></i>
+                </a>
+                <a href="">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </div>
+            </a>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <div class="row ">
+      <div class="col-md-2">
+        <div class="aside-lateral">
+          <ul class="p-0">
+            <li><a href="index.html">INICIO</a> </li>
+            <li><a href="productos.html">PRODUCTOS</a> </li>
+            <li><a href="Proyectos.html">PROYECTOS</a> </li>
+            <li><a href="carritoCompra.html">COMPRAS</a> </li>
+            <li> <a href="nosotros.html">NOSOTROS</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-10">
+
+        <div class="container container-productos mt-3">
+          <div class="row">
+            <div class="col-md-8">
+              <h3 class="productos-title p-2 m-0 ">PRODUCTOS</h3>
+              <div class="card-group">
+                <div class="item card">
+                  <div class="d-flex align-items-center">
+                    <img src="img/DW1.jpg" class="item-image card-img-top w-60" alt="...">
+                    <button class="btn btn-dark addToCart" id="btn">+</button>
+                  </div >
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Alicate</h5>
+                    <p class="card-text item-price">S/15
+                    </p>
+                  </div>
+                </div>
+                <div class="item card">
+                  <div class="d-flex align-items-center">
+                    <img src="img/DW2.jpg" class="item-image card-img-top " alt="...">
+                    <button class="btn btn-dark addToCart" id="btn">+</button>
+                  </div >
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Clavos</h5>
+                    <p class="card-text item-price">S/15
+                    </p>
+                  </div>
+                </div>
+                <div class="item card">
+                  <div class="d-flex align-items-center">
+                    <img src="img/DW3.jpg" class="item-image card-img-top " alt="...">
+                    <button class="btn btn-dark addToCart" id="btn">+</button>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Botas</h5>
+                    <p class="card-text item-price">S/15
+                    </p>
+                  </div>
+                </div>
+      
+              </div>
+              <div class="item card-group">
+                <div class="card">
+                  <div class="d-flex align-items-center">
+                    <img src="img/DW4.jpg" class="item-image card-img-top " alt="...">
+                    <button class="btn btn-dark addToCart" id="btn">+</button>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Taladro</h5>
+                    <p class="card-text item-price">S/15
+                    </p>
+                  </div>
+                </div>
+                <div class="item card">
+                  <div class="d-flex align-items-center">
+                    <img src="img/DW5.jpg" class="item-image card-img-top " alt="...">
+                    <button class="btn btn-dark addToCart" id="btn">+</button>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Martillo</h5>
+                    <p class="card-text item-price">S/15
+                    </p>
+                  </div>
+                </div>
+                <div class="item card">
+                  <div class="d-flex align-items-center">
+                    <img src="img/DW6.jpg" class="item-image card-img-top " alt="...">
+                    <button class="btn btn-dark addToCart" id="btn">+</button>
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title item-title">Guantes de construcción</h5>
+                    <p class="card-text item-price">S/15
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <form>
+                <div class="form-group row mt-3">
+                  <div class="col-sm-4">
+                  <label for="nombre" class="col-sm-2 col-form-label nombres"></label>Nombres y apellidos:</label></div>
+                  <div class="col-sm-8">
+                    <input type="text"  id="nombres" placeholder="nombres y apellidos">
+                  </div>
+                </div>
+                <div class="form-group row mt-3">
+                  <div class="col-sm-4">
+                  <label for="email" class="col-sm-2 col-form-label email"></label>Email</label></div>
+                  <div class="col-sm-8">
+                    <input type="text"  id="email" placeholder="email">
+                  </div>
+                </div>
+                </div>
+              </form>
+              <div class="col-md-4">
+                
+                <div id="t-2">
+                  <h3 class="text-left" id="t-1">Carrito de compra</h3>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="shopping-cart-header">
+                      <h6>Producto</h6>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="shopping-cart-header">
+                      <h6 class="text-truncate">Precio</h6>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="shopping-cart-header">
+                      <h6>Cantidad</h6>
+                    </div>
+                  </div>
+                  <div class="shopping-cart-items shoppingCartItemsContainer">
+                  </div>
+                  
+                </div>
+                <div class="row ">
+                  <div class="col-12" id="t">
+                    <div class="shopping-cart-total d-flex align-items-center" id="t-1">
+                      <p class="mb-0 fw-bold">Total:</p>
+                      <p class="ml-4 mb-0 fw-bold shoppingCartTotal espacio" id="espacio">S/0.0</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="row" id="btns">
+                  <div class="col">
+                    <button class="btn btn-dark" id="comprar" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="modalProductos()">Enviar Compra</button>
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-dark comprarButton" id="comprar" type="button">Nueva Compra</button>
+                  </div> 
+                </div>
+      
+                  <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Compra Registrada</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="Mo"></div>
+                        <div id="Mod"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+      </div>
+      
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <footer class="bg-dark text-center text-white">
+          <!-- Grid container -->
+          <div class="container  p-4">
+            <!-- Section: Form -->
+            <section class="">
+              <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                  <!--Grid column-->
+                  <div class="col-auto">
+                    <p class="pt-2">
+                      <strong>Registrate para enterarte de más</strong>
+                    </p>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-5 col-12">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                      <input type="email" id="form5Example2" class="form-control" />
+                      <label class="form-label" for="form5Example2">Registrate con tu correo electrónico</label>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-auto">
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                      Subscribirme
+                    </button>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+              <p>
+                Llegó toda las cosas que buscabas la "cosa", el "cosito", el "como se llama", la "cosa esa" y mucha
+                cosas más!!!
+              </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Nuestros Locales</h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white"> <i class="fas fa-house-user"></i> Jirón Cajamarca 940</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white"> <i class="fas fa-house-user"></i> Jirón 30 de Agosto 081</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white"> <i class="fas fa-house-user"></i> Jirón Pociono Vigil 745</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white"> <i class="fas fa-house-user"></i> Derrama Megisterial lote 16
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Encuentranos</h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white"><i class="fas fa-phone"></i></a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white"><i class="fab fa-invision"></i></a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">HORARIO DE ATENCIÓN</h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white">Lunes - Martes : 7am- 9pm</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Miercoles - Jueves : 7am- 9pm</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Viernes- Sábado : 7am- 9pm</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Domingo : 10am- 7pm</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">ENCUENTRA</h5>
+
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#!" class="text-white">Calidad a precio asequible</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Todo lo que necesita</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">La calidad esta disponible</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-white">Un mundo de Herramientas</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="#!">FERRETERÍA IRON</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/33a0d02645.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/compras.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

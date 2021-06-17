@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/compra.css">
+  <script src="https://kit.fontawesome.com/33a0d02645.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+
+
+  </div>
+  <div class="container container-productos mt-3">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="productos-title p-2 m-0">PRODUCTOS</h3>
+        <div class="card-group">
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <img src="img/DW1.jpg" class="card-img-top " alt="...">
+              <a href="#" class="btn btn-dark" id="btn">+</a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Alicate</h5>
+              <p class="card-text">s/15
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <img src="img/DW2.jpg" class="card-img-top " alt="...">
+              <a href="#" class="btn btn-dark " id="btn">+</a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Clavos</h5>
+              <p class="card-text">s/15
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <img src="img/DW3.jpg" class="card-img-top " alt="...">
+              <a href="#" class="btn btn-dark " id="btn">+</a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Botas</h5>
+              <p class="card-text">s/15
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <img src="img/DW4.jpg" class="card-img-top " alt="...">
+              <a href="#" class="btn btn-dark " id="btn">+</a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Taladro</h5>
+              <p class="card-text">s/15
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <img src="img/DW5.jpg" class="card-img-top " alt="...">
+              <a href="#" class="btn btn-dark " id="btn">+</a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Martillo</h5>
+              <p class="card-text">s/15
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="d-flex align-items-center">
+              <img src="img/DW6.jpg" class="card-img-top " alt="...">
+              <a href="#" class="btn btn-dark " id="btn">+</a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Guantes de construcción</h5>
+              <p class="card-text">s/15
+              </p>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="form-group row mt-3">
+            <label for="nombre" class="col-sm-2 col-form-label">Nombres y apellidos</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="nombre" placeholder="nombres y apellidos">
+            </div>
+          </div>
+          <div class="form-group row mt-3">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" readonly class="form-control-plaintext" id="staticEmail" placeholder="email">
+            </div>
+          </div>
+          </div>
+        </form>
+        <div class="col-md-4">
+          
+          <div id="t-2">
+            <h3 class="text-left" id="t-1">Carrito de compra</h3>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-4">
+              <div class="shopping-cart-header">
+                <h6>Producto</h6>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="shopping-cart-header">
+                <h6 class="text-truncate">Precio</h6>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="shopping-cart-header">
+                <h6>Cantidad</h6>
+              </div>
+            </div>
+
+          </div>
+          <div class="row ">
+            <div class="col-12" id="t">
+              <div class="shopping-cart-total d-flex align-items-center" id="t-1">
+                <p class="mb-0 fw-bold">Total:</p>
+                <p class="ml-4 mb-0 fw-bold" id="espacio">S/0.0</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" id="btns">
+            <div class="col">
+              <button class="btn btn-dark" id="comprar" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar Compra</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-dark" id="comprar" type="button" >Nueva Compra</button>
+            </div> 
+          </div>
+
+            <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Compra Registrada</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Nombre y apellidos:</p>
+                  <p>Email:</p>
+                  <p>Total Compra:</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
