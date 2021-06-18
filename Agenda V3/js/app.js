@@ -41,7 +41,7 @@ function eliminarTodo(){
 
 function getContacto() {
   const contactosView = document.getElementById("contactos");
-  contactosView.innerHTML = " "; // limpio en caso exista nuevo datos
+  // contactosView.innerHTML = " "; // limpio en caso exista nuevo datos
   if (localStorage.legth != 0) {
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);

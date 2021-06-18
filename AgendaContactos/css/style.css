@@ -8,8 +8,8 @@ html{
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: rgba(0, 0, 0, .8);
-  color: rgba(200, 200, 200, .9);
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .container{
@@ -40,12 +40,13 @@ line-height: 3rem;
 background: none;
 outline: none;
 border:0;
-color: #fff;
+border-bottom: 2px solid #f94144;
+color: #000;
 
 }
 
 .formulario input:active,.formulario input:focus{
-  border-bottom: 1px solid dodgerblue;
+  border-bottom: 2px solid dodgerblue;
 }
 
 .formulario button{
@@ -71,8 +72,13 @@ border-radius: 4px;
   background:#f94144;
 
 }
+.btnGuardar:hover,.btnRecuperar:hover,.btnTodos:hover{
+  opacity: .8;
+}
+
 
 .listado{
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -81,8 +87,13 @@ border-radius: 4px;
   font-size: 1.4rem;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   height: 4rem;
+}
+
+.contactos:hover{
+  background: rgba(139, 193, 255, 0.48);
 }
 
 .btnEliminar{

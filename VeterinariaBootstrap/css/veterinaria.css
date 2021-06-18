@@ -1,0 +1,40 @@
+html, body{
+  height: 100%;
+}
+
+#cover {
+  background: #222 url(../img/marliese-streefland-2l0CWTpcChI-unsplash.jpg) center no-repeat;
+  background-size: 100%;
+  color: white;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#cover-texto{
+  width: 100%;
+}
+
+.navbar-light{
+  background-color: #a2d2ff;
+}
+
+footer div a i{
+   color: #3d9bf3;
+}
+
+footer div ul i{
+   color: #3d9bf3;
+}
+
+.card .btn-outline-secondary{
+  border: 1px solid #7bbdfa;
+  color: #7bbdfa;
+}
+
+.card .btn-outline-secondary:hover{
+  background: #7bbdfa;
+  border: 1px solid #7bbdfa;
+  color: #fff;
+}
+

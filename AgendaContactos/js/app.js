@@ -2,74 +2,88 @@ function guardarContacto(){
     const nombre = document.getElementById("nombre").value;
     const movil = document.getElementById("movil").value;
     const email = document.getElementById("email").value;
+    if (
+      nombre.length === 0 ||
+      movil.length === 0 ||
+      email.length === 0
+    ) {
+      alert("Por favor complete todos los campos");
+    } else {
+      const contacto = {
+        movil,
+        email,
+      };
 
-    const contacto = {
-       movil,
-       email,
-    };
+      localStorage.setItem(nombre, JSON.stringify(contacto));
+      document.getElementById("nombre").value = "";
+      document.getElementById("movil").value = "";
+      document.getElementById("email").value = "";
+      alert("Se guardo el contacto correctamente");
+    }
 
 
-    localStorage.setItem(nombre, JSON.stringify(contacto))
-    document.getElementById("nombre").value="";
-    document.getElementById("movil").value="";
-    document.getElementById("email").value="";
-    getContacto();
+
+    // getContacto();
+  getContacto();
+
 }
+
 
 function recuperarContacto(){
     const nombre = document.getElementById("nombre").value;
     const nombre1 = localStorage.getItem(nombre);
-    const contacto = JSON.parse(nombre1);
-    document.getElementById("movil").value = contacto.movil;
-    document.getElementById("email").value = contacto.email;
+    if(nombre1 === null){
+     alert('El contacto ingresado no se encuentra registrado');
+    }else{
+       const contacto = JSON.parse(nombre1);
+       console.log(nombre1);
+       document.getElementById("movil").value = contacto.movil;
+       document.getElementById("email").value = contacto.email;
+
+    }
+
 
 }
 
 function eliminarContacto(nombre) {
     localStorage.removeItem(nombre);
-     getContacto();
+  alert("El contacto "+ nombre + " ha sido correctamente eliminado");
+  getContacto();
 
 }
-
 
 
 function eliminarTodo(){
     localStorage.clear();
-    getContacto();
+  getContacto();
+  alert("Se eliminaron todos los contactos");
+
 }
 
-
 function getContacto() {
-  let divContacto = document.createElement("div");
-  let nombre = document.createElement("h3");
-  let movil = document.createElement("p");
-  let email = document.createElement("p");
-  let iconEliminar = document.createElement("span");
   const contactosView = document.getElementById("listado");
-//  contactosView.innerHTML = " ";
-  //const contactosView = document.getElementById("contactos");
-
-  //contactosView.innerHTML = " "; // limpio en caso exista nuevo datos
+  contactosView.innerHTML = " "; // limpio en caso exista nuevo datos
   if (localStorage.legth != 0) {
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);
       const contactos = localStorage.getItem(key);
       const contactosA = JSON.parse(contactos);
-      nombre.innerHTML = key;
-      movil.innerHTML = contactosA.movil;
-      email.innerHTML = contactosA.email;
-      iconEliminar.innerHTML = "delete_forever";
-      divContacto.classList.add("contactos");
-      iconEliminar.classList.add("material-icons", "btnEliminar");
-      divContacto.appendChild(nombre);
-      divContacto.appendChild(movil);
-      divContacto.appendChild(email);
-      divContacto.appendChild(iconEliminar);
-      iconEliminar.onclick = function() {eliminarContacto(key)};
-      contactosView.appendChild(divContacto);
-
+      const nombre = key;
+      const movil = contactosA.movil;
+      const email = contactosA.email;
+      contactosView.innerHTML += `
+      <div class="contactos">
+        <h3>${nombre}</h3>
+        <p>${movil}</p>
+        <p>${email}</p>
+        <i class="material-icons btnEliminar" onclick="eliminarContacto('${nombre}')">
+          delete_forever
+        </i>
+      </div>`;
     }
   }
 }
+
+
 
 getContacto();

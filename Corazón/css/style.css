@@ -1,0 +1,303 @@
+body{
+  background: #fff;
+}
+
+.corazon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-30%) rotate(-45deg);
+  background: #dc122a;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+
+}
+img{
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%,-60%) rotate(45deg);
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.banda{
+  position: absolute;
+  width: 170%;
+  height: 15%;
+  background: #fff;
+  top : 25%;
+  left: -20px;
+  z-index: 1; /*se sobrepone*/
+}
+
+.banda2{
+  position: absolute;
+  width: 170%;
+  height: 15%;
+  background: #fff;
+  top : 25%;
+  left: -40px;
+  z-index: 1; /*se sobrepone*/
+  transform: rotate(-90deg)
+}
+
+
+.corazon::before,.corazon::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #dc122a;
+
+}
+
+.corazon::before{
+  left: 50%;
+}
+
+.corazon::after{
+  top: -50%;
+}
+
+.corazon:hover {
+    animation: latir 10s cubic-bezier(.32, 2, .59, 2)    infinite;
+}
+/* cubic-bezier(.32, 2, .59, 2) */
+@keyframes latir {
+    3% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.1);
+    }
+    8% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.2);
+    }
+    13% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.3);
+    }
+    18% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.4);
+    }
+    23% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.5);
+    }
+    28% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.6);
+    }
+    33% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.7);
+    }
+    38% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.8);
+    }
+    43% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.9);
+    }
+    48% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(2);
+    }
+   53% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(2.1);
+    }
+    58% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(2);
+    }
+    63% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.9);
+    }
+    68% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.8);
+    }
+    73% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.7);
+    }
+    78% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.6);
+    }
+    83% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.5);
+    }
+    88% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.4);
+    }
+    93% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(1.3);
+    }
+    98% {
+        transform: translate(-50%, -30%) rotate(-45deg) scale(3);
+    }
+}
+
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+
+}
+/* En la clase corazon vamos a llamar latidos en la animación  */
+.corazon1 {
+  margin-left: 100px;
+   position:absolute;
+   top:0;
+  left:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #c9a524;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+.corazon1-1 {
+  margin-left: 100px;
+   position:absolute;
+   top:1;
+  left:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #edc324;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+.corazon2 {
+  margin-right: 100px;
+  position:absolute;
+  top:0;
+  right:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #0149b6;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+.corazon2-2 {
+  margin-right: 100px;
+  position:absolute;
+  top:1;
+  right:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #0468ff;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+
+.corazon3 {
+  margin-right: 100px;
+  position:absolute;
+  top: 350px;
+  right:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #eb351d;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+
+.corazon3-3 {
+  margin-right: 100px;
+  position:absolute;
+  top: 360px;
+  right:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #e74900;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+
+
+
+.corazon4 {
+  margin-left: 100px;
+  position:absolute;
+  top: 350px;
+  left:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #4e2c3d;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+
+.corazon4-4 {
+  margin-left: 100px;
+  position:absolute;
+  top: 360px;
+  left:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #a64d79;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+.corazon5 {
+  margin-left: 100px;
+  position:absolute;
+  top: 180px;
+  left:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #005721;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+.corazon5-5 {
+  margin-left: 100px;
+  position:absolute;
+  top: 190px;
+  left:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #00ce4f;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+.corazon6 {
+  margin-right: 100px;
+  position:absolute;
+  top: 180px;
+  right:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #000000;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
+
+
+.corazon6-6 {
+  margin-right: 100px;
+  position:absolute;
+  top: 190px;
+  right:0;
+  display: inline-block;
+  font-size: 150px;
+  text-shadow: 0 0 10px #222,1px 1px  0 #450505;
+  color: #727171;
+  animation: latidos .5s infinite;
+  transform-origin: center;
+}
