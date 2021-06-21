@@ -86,9 +86,9 @@ padding-top: 12px;
 
 .header-2{
 grid-area: header-2;
-background-image: url(../img/1.jpg);
+background-image: url(../img/2.jpg);
 background-repeat: no-repeat;
-font-size: 14px;
+font-size: 16px;
 padding-top: 15px ;
 padding-bottom: 18%;
   display: flex;
@@ -118,19 +118,23 @@ display: flex;
 list-style-type: none;
 margin-top: 10px;
 justify-content: flex-end;
+
 /* justify-content: space-around; */
 /* align-items: center; */
 }
 
-
 .header-2 nav ul li{
-   float: left;
+   /* float: left; */
   list-style: none;
+  width: 100%;
   background: #fff;
+
 }
+
 .header-2 nav ul li a{
    float: left;
   list-style: none;
+  width: 100%;
   text-align: center;
   padding: 10px;
   background: #fff;
@@ -140,10 +144,21 @@ justify-content: flex-end;
 
 }
 
-.header-2 nav ul li a>i{
-color: #800008;
+.header-2 nav ul  .buscar{
+   float: left;
+  list-style: none;
+  /* width: 100%; */
+  text-align: center;
+  padding: 10px;
+  background: #fff;
+ text-decoration: none;
+  color: #800008;
+  /* display: inline-block; */
 
 }
+
+
+
 
 .header-2 nav ul li a:hover{
 background: #6C1A1A;
@@ -151,18 +166,23 @@ color: #fff;
 
 }
 
-.header-2 nav ul li a>i:hover{
+.header-2 nav ul li .buscar:hover{
+background: #fff;
+
+}
+
+/* .header-2 nav ul li a>i:hover{
 background: #6C1A1A;
 color: #fff;
 
-}
+} */
 
 
 
 .header-2 nav .slogan{
   /* display: flex;
 justify-content: flex-end; */
-  margin-top: 10%;
+  margin-top: 3%;
   margin-left: 10px;
   color: #fff;
   /* width: 60%; */
@@ -236,7 +256,7 @@ background: #000;
   /* float: left;
    */
 
-  width: 30%;
+  width: 25%;
   font-size: 16px;
   line-height: 27px;
 
@@ -254,6 +274,7 @@ border: none;
 padding: 5px;
 }
 
+
 .footer .col-footer form  button{
 width: 33%;
 padding: 4px;
@@ -261,6 +282,10 @@ color: #fff;
 background: #6C1A1A;
 border: none;
 cursor: pointer;
+}
+
+ .footer .col-footer form textarea{
+    resize: none;
 
 }
 .footer .col-footer,.footer .logo{
@@ -292,6 +317,8 @@ line-height: 30px;
 text-decoration: none;
 color: #fff;
 }
+
+
 .footer .col-footer ul  li a i{
 color: #6C1A1A;
 }
@@ -303,7 +330,7 @@ width: 60%;
 }
 
 .footer .logo img {
-width: 30%;
+width: 40%;
 
 }
 .footer .form {
@@ -316,6 +343,38 @@ width: 30%;
 .footer .logo{
 /* text-align: center; */
   text-align: center;
+  /* background: rebeccapurple; */
+}
+
+.footer .logo ul li  i{
+color:#6C1A1A;
+}
+
+
+
+
+.footer .logo img ,.footer .logo ul{
+  margin-left:25%;
+}
+
+footer .logo ul{
+  margin-top: 10%;
+
+}
+
+
+
+
+
+.footer .mapa ul,.footer .mapa h3{
+/* text-align: center; */
+  /* text-align: center; */
+  /* background: red; */
+  margin-left: 40%;
+}
+
+.footer .mapa  li a:hover{
+text-decoration: underline;
 }
 
 
