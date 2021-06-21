@@ -210,3 +210,119 @@ background: #000;
 }
 
 
+/* footer */
+
+.footer{
+  background: rgba(84, 54, 9, .46);
+  /* line-height: 4; */
+  color: #fff;
+  /* display: flex; */
+}
+.footer .footer-main{
+  /* padding: 20px 30px; */
+
+  /* margin: auto; */
+  /* padding: 10px; */
+  /* width: 100%; */
+   display: flex;
+    flex-direction: col;
+   justify-content: center;
+
+}
+
+
+
+.footer .footer-main .col-footer{
+  /* float: left;
+   */
+
+  width: 30%;
+  font-size: 16px;
+  line-height: 27px;
+
+}
+
+
+.footer .col-footer form label {
+display: block;
+
+}
+
+.footer .col-footer form  input,.footer .col-footer form  textarea {
+width: 70%;
+border: none;
+padding: 5px;
+}
+
+.footer .col-footer form  button{
+width: 33%;
+padding: 4px;
+color: #fff;
+background: #6C1A1A;
+border: none;
+cursor: pointer;
+
+}
+.footer .col-footer,.footer .logo{
+   /* background: red; */
+   margin: 20px 0px;
+  /* display: flex; */
+   /* display: flex; */
+
+}
+.footer .col-footer ul  li{
+list-style: none;
+line-height: 30px;
+
+}
+
+.footer .col-footer  li a{
+text-decoration: none;
+color: #fff;
+}
+
+
+.footer .logo ul  li{
+list-style: none;
+line-height: 30px;
+
+}
+
+.footer .logo  li a{
+text-decoration: none;
+color: #fff;
+}
+.footer .col-footer ul  li a i{
+color: #6C1A1A;
+}
+
+
+.footer .logo img {
+width: 60%;
+
+}
+
+.footer .logo img {
+width: 30%;
+
+}
+.footer .form {
+/* margin-left: 100px; */
+
+/* text-align: center; */
+  /* text-align: center; */
+}
+
+.footer .logo{
+/* text-align: center; */
+  text-align: center;
+}
+
+
+.footer .copy{
+  background: #6C1A1A;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
