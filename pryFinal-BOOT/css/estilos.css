@@ -1,0 +1,134 @@
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+#cabeza{
+margin: 0%;
+background-color: #6C1A1A;
+color: white;
+text-align: right;
+padding-right: 10%;
+font-size: 12px;
+}
+
+/* Para que no este separado lo de arriba */
+#cabeza>#a{
+    margin-right: -0.5%;
+}
+
+#cabeza>#a,#c{
+display:inline-block;
+vertical-align:top;
+
+padding: 1% 1% 1% 1%; 
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+#barra{
+    text-align: right;
+    padding: 2% 13% 1% 1%;
+}
+
+#titu>h2{
+    margin: 0%;
+}
+
+#titu{
+    position: absolute;
+    font-size: 28px;
+    color: white;
+    /* border: 1px solid black; */
+    top: 18%;
+    left: 53%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#lupa{
+    padding-right: 5%;
+    text-align: center
+}
+
+#barra>span{
+    background-color: white;
+    /* border: 1px solid black; */
+    font-size: 11px;
+    padding: 1% 1.5% 1% 1.5%;
+    margin: -0.2%;
+}
+
+#iii{
+    
+    position: absolute;
+    top: 7%;
+    left: 15%;
+}
+
+#boto{
+    color: white;
+background-color: #6C1A1A;
+position: absolute;
+font-size: 10px;
+width: 11%;
+padding: 0px;
+text-align: center;
+top: 44%;
+    left: 76%;
+    
+}
+
+
+
+#cabeza-2{
+background-image: url(../img/Rectangle\ 127.png);
+background-repeat: no-repeat;
+padding-bottom: 18%;
+
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+#cuerpo{
+margin: 1% 0% 1% 0%;
+background-image: url(../img/image\ 32.png);
+background-repeat: no-repeat;
+padding-bottom: 11%;
+}
+
+#cuerpo>div{
+font-size: 80px;
+color: white;
+
+position: absolute;
+    top: 57%;
+    left: 38%;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+
+#cuerpo-2{
+margin: 1% 0% 1% 0%;
+/* border: 1px solid black; */
+padding-bottom: 70%;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+#footer{
+background-color: #474747;
+padding-bottom: 25%;
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+#footer-2{
+text-align: center;
+color: white;
+background-color: #6C1A1A;
+padding-bottom: 0.5%;
+}
+
