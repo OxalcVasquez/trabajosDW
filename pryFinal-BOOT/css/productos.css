@@ -1,3 +1,16 @@
+.header-2 nav ul li .inicio-nav {
+  /* background: #6C1A1A; */
+  /* color: #fff; */
+  background: #fff;
+  color: #000;
+}
+
+.header-2 nav ul li .productos-nav {
+  background: #6C1A1A;
+  color: #fff;
+}
+
+
 .main .productos-titulo h1{
 /* background-image: url(../img/Rectangle\ 128.png); */
 background: orange;
@@ -222,3 +235,14 @@ color: #fff;
 
 
 
+@media screen and (min-width:768px) and (max-width: 1368px){
+  .descuento + .imagen img{
+     width: 60%;
+     margin-bottom: 10px;
+     /* margin-bottom: 35px; */
+     /* margin-top: 10px; */
+     /* width: 100px; */
+     /* height: 100px; */
+   }
+
+}
