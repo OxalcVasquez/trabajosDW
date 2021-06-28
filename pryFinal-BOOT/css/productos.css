@@ -100,6 +100,11 @@ transform: translateY(-15px);
 
 }
 
+.card-producto .precio a .fa-shopping-cart:hover,.card-producto .precio a .fa-heart:hover {
+color: #6C1A1A
+
+}
+
 .card-producto .descuento{
   background: #000;
   width: 100%;
@@ -124,6 +129,10 @@ transform: translateY(-15px);
    /* width: 100px; */
    /* height: 100px; */
  }
+
+
+
+
 
 /*ACORDION*/
 
@@ -187,5 +196,29 @@ background: #6C1A1A;
     outline: 0;
     box-shadow: none;
 }
+
+.animales{
+  margin-top: 50px;
+  color: #fff;
+  /* width: 316.6px;
+  height: 65.38px; */
+  height: 60px;
+  font-size: 18px;
+  background: #6C1A1A;
+  border-radius: 10px;
+   justify-content: space-around;
+  align-items: center;
+
+  text-decoration: none;
+
+}
+
+
+.animales:hover{
+background: #000;
+color: #fff;
+
+}
+
 
 
