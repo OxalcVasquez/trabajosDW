@@ -10,6 +10,36 @@
   color: #fff;
 }
 
+.buscar-producto {
+float: right;
+/* margin-bottom: 100px; */
+}
+
+
+.buscar-producto label{
+font-size: 16px;
+font-weight: bold;
+color: #6C1A1A;
+
+}
+
+
+
+.buscar-producto input{
+  background: #FFFFFF;
+  width: 265px;
+  border: 1px solid #800000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.buscar-producto input:focus{
+  /* border: none; */
+   outline: 0;
+
+  /* outline: none; */
+}
 
 .main .productos-titulo h1{
 /* background-image: url(../img/Rectangle\ 128.png); */
@@ -232,7 +262,93 @@ background: #000;
 color: #fff;
 
 }
+/* .carousel{
+  background: #6C1A1A;
+} */
 
+
+
+.productos-indicadores [data-bs-target]{
+  margin-top: 100px;
+   border-radius: 50%;
+   /* width: 1%;
+   height: 1%; */
+   width: 10px;
+   height: 10px;
+   border-bottom: 0;
+   border-top: 0;
+  /* width: 15px; */
+  /* height: 10px; */
+  background: #6C1A1A;
+  z-index: 2;
+
+}
+
+.controles-navegacion{
+  display: flex;
+  /* background: red; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controles-navegacion .anterior, .controles-navegacion .siguiente{
+  color: #fff;
+  padding: 5px;
+  width: 100px;
+  text-align: center;
+  justify-content: space-between;
+  text-decoration: none;
+  background: #6C1A1A;
+  box-shadow: 0px 2.75303px 2.75303px rgba(0, 0, 0, 0.25);
+   transition: all 0.25s;
+}
+
+.controles-navegacion .anterior:hover{
+  background: #000;
+
+  /* transform: translateX(-15px); */
+
+}
+
+ .controles-navegacion .siguiente:hover{
+  background: #000;
+  /* transform: translateX(15px); */
+
+
+}
+
+.controles-navegacion .numeros-indices a{
+display: inline-block;
+color: #fff;
+width: 25px;
+font-size: 14px;
+height: 25px;
+align-items: center;
+line-height: 25px;
+text-decoration: none;
+text-align: center;
+border-radius: 50%;
+background: #6C1A1A;
+}
+
+.controles-navegacion .numeros-indices .dos,.controles-navegacion .numeros-indices .tres{
+opacity: .5;
+}
+
+
+.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+ .flecha-anterior  {
+  /* background-image:url("../img/felchaiz.svg"); */
+/* background: #000; */
+}
+.flecha-siguiente{
+  /* background-image:url("../img/chevron_big_right.svg") */
+
+}
 
 
 @media screen and (min-width:768px) and (max-width: 1368px){
