@@ -73,14 +73,14 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                   <div class="card-body">
-                    <label class="label-check"><input type="checkbox" id="cboxmarca1" value="marca1"> Agrofarma Internacional
+                    <label ><input type="checkbox" id="cboxmarca1"  class="categoria-item" value="Agrofarma Internacional"> Agrofarma Internacional
                     </label>
-                    <label class="label-check"><input type="checkbox" id="cboxmarca1" value="marca1"> Agropharma
+                    <label class="label-check"><input type="checkbox" id="cboxmarca1"class="categoria-item" value="Agropharma"> Agropharma
                     </label>
-                    <label><input type="checkbox" id="cboxmarca2" value="marca2"> Bayer</label>
-                    <label><input type="checkbox" id="cboxmarca2" value="marca2"> Biomont</label>
-                    <label><input type="checkbox" id="cboxmarca3" value="marca3"> Quimica suiza</label>
-                    <label><input type="checkbox" id="cboxmarca4" value="marca4"> Grupo Silvestre</label>
+                    <label><input type="checkbox" id="cboxmarca2" class="categoria-item" value="Bayer"> Bayer</label>
+                    <label><input type="checkbox" id="cboxmarca2" class="categoria-item" value="Biomont"> Biomont</label>
+                    <label><input type="checkbox" id="cboxmarca3" class="categoria-item" value="Qumica"> Quimica suiza</label>
+                    <label><input type="checkbox" id="cboxmarca4" class="categoria-item" value="GrupoSilvestre"> Grupo Silvestre</label>
 
                   </div>
                 </div>
@@ -180,12 +180,18 @@
 
           </div>
           <div class="col-9">
+
           <form method="get" action="" class="buscar-producto">
             <label for="">Buscar producto: </label>
             <input type="search" name="q">
           </form>
-           <div class="card-grupo d-flex mt-5">
-            <div class="card-producto">
+          <div class="filtros-activos">
+            <span>Filtros Activos </span>
+            <span>Filtro 2</span>
+            <span>Filtro 3</span>
+          </div>
+           <div class="card-grupo d-flex mt-5" >
+            <div class="card-producto" category="Agrofarma Internacional">
               <div class="imagen">
                 <a href="  ">
                   <img src="img/biomec.png" alt="">
@@ -206,7 +212,7 @@
 
             </div>
 
-            <div class="card-producto">
+            <div class="card-producto" category="Agropharma">
               <div class="imagen">
                 <a href="
                                         ">
@@ -465,6 +471,8 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/filtrado-productos.js"></script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/bootstrap/acordion-productos.js"></script>

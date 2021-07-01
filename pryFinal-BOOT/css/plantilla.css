@@ -14,7 +14,7 @@ body{
   display: grid;
   /* max-width: 1920px; */
   /* margin: auto; */
-  max-width: 1920px;
+  /* max-width: 1920px; */
   grid-template-columns: auto;
   grid-template-rows: repeat(3,auto);
   grid-template-areas: "header-1"

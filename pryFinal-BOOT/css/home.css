@@ -144,7 +144,7 @@ color: #fff;
   background: #6C1A1A;
   height: 5px;
 }
-.productos-indicadores [data-bs-target]{
+.promocion-indicadores [data-bs-target]{
    border-radius: 50%;
    /* width: 1%;
    height: 1%; */
