@@ -377,6 +377,13 @@ width: 100%;
 
 }
 
+.filtros i{
+  margin-right: 10px;
+  opacity: .8;
+  cursor: pointer;
+
+}
+
 .filtros a{
   margin-right: 10px;
   /* display: block; */

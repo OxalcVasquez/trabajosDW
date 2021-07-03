@@ -33,7 +33,7 @@
       <nav>
         <ul>
           <li><a href="#" class="inicio-nav">INICIO</a></li>
-          <li><a href="#">PRODUCTOS</a></li>
+          <li><a href="#" class="productos-nav">PRODUCTOS</a></li>
           <li><a href="#">BLOG</a></li>
           <li><a href="#">SERVICIOS</a></li>
           <li><a href="#">NOSOTROS</a></li>
@@ -69,18 +69,17 @@
                 <div class="carousel-inner">
                   <div class="carousel-item productos-item active ">
                     <div class="row d-flex justify-content-around ">
-                        <img src="img/biomec1.png" class="w-25 " alt="...
-                      <div class="col-4">
-                        <img src="img/biomec2.png" class=" w-25  " alt="...">
+                        <img src="img/biomec1.png" class="w-25 " alt="..."  >
+
+                        <img src="img/biomec2.png" class=" w-25  " alt="..." >
 
 
-                        <img src="img/biomec3.png" class=" w-25 " alt="...">
+                        <img src="img/biomec3.png" class=" w-25 " alt="..." >
                     </div>
                   </div>
                   <div class="carousel-item productos-item ">
                     <div class="row d-flex justify-content-around ">
-                      <img src="img/biomec1.png" class="w-25 " alt="...
-                                          <div class=" col-4">
+                      <img src="img/biomec1.png" class="w-25 " alt="..." >
                       <img src="img/biomec2.png" class=" w-25  " alt="...">
 
 
@@ -115,6 +114,7 @@
                 <p class="etiqueta">#005578</p>
                 <p class="descripcion-producto"><b>Descripción : </b> Antiparasitario interno y externo de acción prolongada.</p>
                 <p class="especies-producto"><b>Especies : </b> Animales de Producción</p>
+                <p class="tipo"><b>Tipo : </b> Inyectable</p>
                 <div class="precio-producto d-flex">
                   <p>S/41</p>
                   <p class="descuento">-10% <i class="fas fa-tags"></i></p>
@@ -123,23 +123,20 @@
               <div class="detalle-producto">
                 <ul class="nav nav-tabs nav-fill mb-3" id="ex1" role="tablist">
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="ex2-tab-1" data-mdb-toggle="tab" href="#ex2-tabs-1" role="tab"
-                      aria-controls="ex2-tabs-1" aria-selected="true">Composición</a>
+                    <a class="nav-link active" data-bs-toggle="tab" href="#ex2-tabs-1">Composición</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="ex2-tab-2" data-mdb-toggle="tab" href="#ex2-tabs-2" role="tab" aria-controls="ex2-tabs-2"
-                      aria-selected="false">Presentaciones</a>
+                    <a class="nav-link" data-bs-toggle="tab" href="#ex2-tabs-2">Presentaciones</a>
                   </li>
                   <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="ex2-tab-3" data-mdb-toggle="tab" href="#ex2-tabs-3" role="tab" aria-controls="ex2-tabs-3"
-                      aria-selected="false">Indicación</a>
+                    <a class="nav-link"  data-bs-toggle="tab" href="#ex2-tabs-3">Indicación</a>
                   </li>
                 </ul>
                 <!-- Tabs navs -->
 
                 <!-- Tabs content -->
                 <div class="tab-content" id="ex2-content">
-                  <div class="tab-pane fade show active" id="ex2-tabs-1" role="tabpanel" aria-labelledby="ex2-tab-1 " >
+                  <div class="tab-pane active" id="ex2-tabs-1"  >
                     <div class="contenido-tab">
                       <p>Cada 1 mL contiene:</p>
 
@@ -148,11 +145,32 @@
                     </div>
 
                   </div>
-                  <div class="tab-pane fade" id="ex2-tabs-2" role="tabpanel" aria-labelledby="ex2-tab-2">
-                    Tab 2 content
-                  </div>
-                  <div class="tab-pane fade" id="ex2-tabs-3" role="tabpanel" aria-labelledby="ex2-tab-3">
-                    Tab 3 content
+                  <div class="tab-pane " id="ex2-tabs-2" >
+                  <div class="contenido-tab">
+                    <p>
+                      Frasco por 50 mL, 100 mL, 250 mL y 500 mL.
+
+                    </p>
+                  </div>                  </div>
+                  <div class="tab-pane " id="ex2-tabs-3" >
+                    <div class="contenido-tab">
+                      <h6>DOSIS RECOMENDADA</h6>
+                      <div class="indicacion-contenido">
+                        <p>
+                        <ul>
+                          <li><span>Bobinos : </span> 1 mL de producto por cada 50 kg de peso, lo que equivale a 630 mcg de sustancia activa por
+                            kg de peso</li>
+                          <li>
+                            <span>Ovinos, caprinos y camélidos sudamericanos: : </span>
+                            0,5 mL de producto por cada 25 kg de peso, lo que equivale a 630 mcg de
+                            sustancia activa por kg de peso
+                            Algunos cálculos que pueden serle útiles
+                          </li>
+                        </ul>
+                        </p>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
                 <!-- Tabs content -->
@@ -175,8 +193,12 @@
                   <input type="number" id="cantidad" name="cantidad" min="1" max="100">
                 </div>
                 <div class="col-6">
-                  <button type="button" class="btn-carrito "><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
-                <button type="button" class="btn-whatsapp mt-4"> <i class="fab fa-whatsapp"></i> ¿Alguna consulta?</button>
+                  <button type="button" class="btn-carrito  "data-bs-toggle="modal" data-bs-target="#exampleModal" ><i class="fas fa-shopping-cart"></i> Añadir al carrito</button>
+                <button type="button" class="btn-whatsapp mt-4">
+                  <a href="https://api.whatsapp.com/send?phone=51994035509&text=Hola,%20¿tengo%20una%20consulta?" target="_blank">
+                    <i class="fab fa-whatsapp"></i> ¿Alguna consulta?
+                  </a>
+               </button>
                 </div>
               </div>
 
@@ -184,24 +206,23 @@
           </div>
           <div class="row">
             <div class="col-12">
-              <div class="productos mt-5 ">
+              <div class="promociones mt-5 ">
                 <h2 class="text-left promocion-titulo">PROMOCIONES</h2>
                 <hr>
                 <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
                   <ol class="carousel-indicators promocion-indicadores">
-                    <li type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"
+                    <li type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0" class="active"
                       aria-current="true" aria-label="Slide 1"></li>
-                    <li type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                    <li type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1" aria-label="Slide 2"></li>
                   </ol>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="card-grupo d-flex mt-4">
+                        <div class="card-grupo d-flex justify-content-around mt-4">
                           <div class="card-producto">
                             <span class="descuento">10% DESCUENTO</span>
                             <div class="imagen">
 
-                              <a href="
-                                                                                                                                ">
+                              <a href="  ">
                                 <img src="img/calo.png" alt="">
                               </a>
                             </div>
@@ -221,18 +242,17 @@
 
                           </div>
 
-                          <div class="card-producto">
+                          <div class="card-promocion">
                             <div class="imagen">
-                              <a href="
-                                                                                                            ">
+                              <a href="productosTodos.html">
                                 <img src="img/promocion-acercade.png" alt="">
                               </a>
                             </div>
                             <div class="informacion">
-                              <h5>DESCUENTOS HASTA 50% EN PRODUCTOS SELECCIONADOS</h5>
                               <div class="precio">
+                                <span>DESCUENTOS HASTA 50% EN PRODUCTOS SELECCIONADOS</span>
                                 <span>
-                                  <a href="">Ver más<i class="fas fa-chevron-right"></i></a>
+                                  <a href="">Ver más<i class="fas fa-chevron-right  mx-1"></i></a>
                                 </span>
                               </div>
                             </div>
@@ -264,24 +284,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                      <div class="card-grupo d-flex mt-4">
-                        <div class="card-producto">
-                          <div class="imagen">
-                            <a href="
-                                                                                                                                ">
-                              <img src="img/promocion-acercade.png" alt="">
-                            </a>
-                          </div>
-                          <div class="informacion">
-                            <h5>DESCUENTOS HASTA 50% EN PRODUCTOS SELECCIONADOS</h5>
-                            <div class="precio">
-                              <span>
-                                <a href="">Ver más<i class="fas fa-chevron-right"></i></a>
-                              </span>
-                            </div>
-                          </div>
-
-                        </div>
+                      <div class="card-grupo d-flex justify-content-around mt-4">
                         <div class="card-producto">
                           <span class="descuento">50% DESCUENTO</span>
 
@@ -290,7 +293,7 @@
                               <img src="img/ectobu.png" alt="">
                             </a>
                           </div>
-                          <div class="informacion">
+                          <div class="informacion ">
                             <h5>ECTOBULL </h5>
                             <p class="descripcion">
                               Antiparasitario externo</p>
@@ -304,13 +307,27 @@
                           </div>
 
                         </div>
+                        <div class="card-promocion">
+                          <div class="imagen">
+                            <a href=" ">
+                              <img src="img/promocion-acercade.png" alt="">
+                            </a>
+                          </div>
+                          <div class="informacion">
+                            <div class="precio">
+                              <span>DESCUENTOS HASTA 50% EN PRODUCTOS SELECCIONADOS</span>
+                              <span>
+                                <a href="productosTodos.html" >Ver más<i class="fas fa-chevron-right mx-1"></i></a>
+                              </span>
+                            </div>
+                          </div>
+
+                        </div>
+
                         <div class="card-producto">
                           <span class="descuento">10% DESCUENTO</span>
                           <div class="imagen">
-
-                            <a
-                              href="
-                                                                                                                                                                            ">
+                            <a href="  ">
                               <img src="img/calo.png" alt="">
                             </a>
                           </div>
@@ -332,11 +349,11 @@
                       </div>
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
+                  <button class="carousel-control-prev1" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
+                  <button class="carousel-control-next1" type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
@@ -401,6 +418,79 @@
       <div class="text-center">Bioquímica del Norte Andino 2021 - Copyright © Todos los Derechos Reservados</div>
     </div>
   </div>
+
+
+
+
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-contenido container-fluid" id="#modalC">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-check"></i>Producto añadido correctamente a su
+              carrito de compras</h5>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          </div>
+          <div class="modal-body mt-5 mb-5">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-7 text-center d-flex justify-content-around">
+                  <div class="img-modal">
+                    <img src="img/biogold.png" alt="">
+                  </div>
+                  <div class="descripcion-modal">
+                    <p class="nombre-producto-modal">
+                      BIOMEC GOLD 3.5%
+                    </p>
+                    <p class="precio-modal">
+                      S/41.00
+                    </p>
+                    <ul>
+                      <li class="tipo-modal"><span>Tipo:</span>Inyectable</li>
+                      <li class="presentacion-modal"><span>Presentación:</span>100ml</li>
+                      <li class="cantidad-modal"><span>Cantidad: </span>1</li>
+                    </ul>
+
+                  </div>
+
+                </div>
+                <div class="col-5">
+                  <p>Confirme el articulo en su carrito.</p>
+                  <div class="subtotal-modal d-flex justify-content-between">
+                    <p>SUBTOTAL:</p>
+                    <p class="subtotal-contenido">S/0.00</p>
+                  </div>
+                  <div class="envio d-flex justify-content-between">
+                    <p>Envio:</p>
+                    <p class="pendiente">Pendiente</p>
+                  </div>
+                  <div class="total-modal d-flex justify-content-between">
+                    <p>TOTAL</p>
+                    <p class="total-contenido">S/41.00</p>
+
+                  </div>
+                  <div class="botones-modal">
+                    <a type="button" class="btn-seguir-comprando"  href="productosTodos.html">CONTINUAR COMPRANDO</a>
+                    <button type="button" class="btn-pagar-modal"><i class="fas fa-check mx-1"></i>PAGAR</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 
