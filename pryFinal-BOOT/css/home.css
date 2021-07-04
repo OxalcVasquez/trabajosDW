@@ -6,6 +6,7 @@
 }
 
 
+
 .promociones .carousel-caption {
 text-align: right;
 /* background: rebeccapurple; */
@@ -13,14 +14,12 @@ text-align: right;
 
 .promociones .carousel-control-prev-icon {
   background-image:url("../img/circle_chevron_left.svg");
-
-
-
-
 }
 .promociones .carousel-control-next-icon { background-image:url("../img/circle_chevron_left-1.svg")}
+
 .btn-conoce{
 background: #000;
+transition: all 0.5s;
 border: none;
 padding: 5px 20px;
 color: #fff;
@@ -96,6 +95,7 @@ border: none;
 padding: 5px 20px;
 color: #fff;
 text-decoration: none;
+  transition: all 0.5s;
 }
 
 .btn-saber:hover{
@@ -197,7 +197,7 @@ color: #fff;
 
 .descripcion-serv h3{
   color: #6C1A1A;
-  /* font-weight: bold; */
+  font-weight: bold;
    text-align: center;
   /* margin-bottom: 10px;
 
@@ -207,7 +207,7 @@ color: #fff;
 .descripcion-serv p{
 text-align: center;
 /* background: rebeccapurple; */
-padding: 10px 100px ;
+padding: 10PX;
 
 }
 
@@ -308,6 +308,7 @@ transform: translateY(-15px);
   padding: 5px;
   color: #fff;
   margin-bottom: 10px;
+  transition: all 0.5s;
   border-radius: 8px;
 }
 .col-6 .contenedor-caja .btn-leermas:hover{
@@ -360,3 +361,50 @@ transform: translateY(-15px);
   border-radius: 8px;
   position: absolute;
 }
+
+
+@media (max-width: 576px) {
+
+
+
+
+}
+
+
+@media  screen and (min-width: 576px) and (max-width: 768px){
+
+
+  }
+
+
+
+@media  screen and (min-width: 768px) and (max-width: 992px){
+    .descripcion img{
+      width: 35%;
+      height: 30%;
+      align-self: center;
+    }
+
+    .contenedor-des {
+    text-align: right;
+    margin-right: 50px;
+    /* padding: 50px; */
+    /* background: rebeccapurple; */
+    /* padding: 0px 80px ; */
+    }
+
+  }
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+
+
+ }
+
+
+

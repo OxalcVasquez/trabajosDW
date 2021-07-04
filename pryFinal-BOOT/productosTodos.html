@@ -14,44 +14,54 @@
   <link rel="stylesheet" href="css/productos.css">
 
 
-  <title>Document</title>
+  <title>Productos</title>
 </head>
 <body>
   <div class="grid">
-       <header class="header-1">
-         <nav>
-          <ul>
-            <li><a href="#" class="text-center">LOGIN</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">CONTACTANOS</a></li>
-            <li><a href="#">CARRITO</a></li>
-          </ul>
-         </nav>
-       </header>
-
-    <header class="header-2">
-
-          <img src="img/layer1.svg" alt="">
+    <header class="header-1">
       <nav>
         <ul>
-          <li><a href="home.html" class="inicio-nav">INICIO</a></li>
-          <li><a href="productos.html" class="productos-nav">PRODUCTOS</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">SERVICIOS</a></li>
-          <li><a href="#">NOSOTROS</a></li>
-          <a href="" class="buscar"><i class="fas fa-search"></i></a>
-          <!-- <li><a href="" class="buscar"><i class="fas fa-search"></i></a></li> -->
+          <li><a href="#" class="text-center">LOGIN</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">CONTACTANOS</a></li>
+          <li><a href="#">CARRITO</a></li>
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
         </ul>
-        <div class="slogan">
+      </nav>
+    </header>
 
-          <h2>VELAMOS POR EL</h2>
-          <h2>BIENESTAR DE TUS</h2>
-          <h2>ANIMALES</h2>
+    <header class="header-2 ">
+      <nav class=" d-flex justify-content-between row flex-row">
 
+        <div class="img-logo col-lg-6   col-md-6  col-sm-12  mb-3">
+          <img src="img/layer1.svg" alt="" class="img-fluid">
+
+        </div>
+
+        <div class="col-lg-6  col-md-6  col-sm-12">
+          <ul class="nav-menu">
+            <li><a href="#" class="inicio-nav">INICIO</a></li>
+            <li><a href="#">PRODUCTOS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li class="buscar">
+              <a href=""><i class="fas fa-search"></i></a>
+            </li>
+
+          </ul>
+          <div class="slogan">
+            <h2>VELAMOS POR EL
+              BIENESTAR DE TUS
+              ANIMALES</h2>
+          </div>
           <div class="ver-productos">
             <a href="">VER PRODUCTOS</a>
           </div>
         </div>
+
       </nav>
     </header>
     <main class="main mt-0">
@@ -414,10 +424,10 @@
       </div>
 
     </main>
-    <footer class="footer mt-5">
-      <div class="footer-main">
+    <footer class="footer ">
+      <div class="footer-main row mt-4 mb-3 ">
 
-        <div class="col-footer">
+        <div class="col-footer col-md-4 col-sm-6">
           <form action="">
             <h3>Contáctanos</h3>
             <label for="nombre">Nombres</label>
@@ -430,7 +440,7 @@
           </form>
         </div>
 
-        <div class="col-footer mapa">
+        <div class="col-footer col-md-4 mapa col-sm-6">
 
           <h3><b>Mapa del sitio</b></h3>
           <ul class="list-unstyled">
@@ -442,30 +452,31 @@
           </ul>
         </div>
 
-        <div class=" logo">
+        <div class=" logo col-md-4 col-sm-12 col-footer">
           <img src="./img/layer1.svg" alt="">
           <ul>
             <li>
               <i class="fas fa-phone-alt"></i>
-              <a href="#">(051) 9999999</a></li>
+              <a href="#">(051) 9999999</a>
+            </li>
             <li>
               <i class="far fa-envelope"></i>
-            <a href="#">bioquimi@gmail.com</a></li>
+              <a href="#">bioquimi@gmail.com</a>
+            </li>
             <li><a href="#">Siguenos en nuestras </a></li>
             <li><a href="">redes sociales:</a></li>
             <li><a href="#"><i class="fab fa-instagram"></i></a>
               <a href="#"><i class="fab fa-facebook"></i></a>
             </li>
           </ul>
-      </div>
+        </div>
 
       </div>
-
-
+      <div class="copy justify-content-between">
+        <div class="">Bioquímica del Norte Andino 2021 - Copyright © Todos los Derechos Reservados</div>
+        <div class="web-master">Desarrollado por ROXV</div>
+      </div>
     </footer>
-    <div class="copy">
-      <div class="text-center">Bioquímica del Norte Andino 2021 - Copyright © Todos los Derechos Reservados</div>
-    </div>
   </div>
 
 
