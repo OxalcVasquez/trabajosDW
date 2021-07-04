@@ -11,7 +11,7 @@
 }
 .main .productos-titulo h1{
 /* background-image: url(../img/Rectangle\ 128.png); */
-background: orange;
+background: #6C1A1A;
 /* background: no-repeat; */
 text-align: center;
 padding: 30px;
@@ -56,7 +56,7 @@ font-weight: bold;
 
 
 .productos-item img{
-
+  width: 25%;
   border: 1px solid rgba(0, 0, 0, 0.08);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -198,23 +198,23 @@ text-align: justify;
   border-radius: 0;
 }
 
-.col-6 .btn-carrito,.col-6 .btn-whatsapp{
+.botones .btn-carrito,.botones .btn-whatsapp{
 width: 100%;
 padding: 8px;
 border: 0;
 color: #fff;
 }
-.col-6 .btn-carrito,.col-6 .btn-whatsapp a{
+.botones .btn-carrito,.botones .btn-whatsapp a{
 text-decoration: none;
 color: #fff;
 }
 
-.col-6 .btn-carrito{
+.botones .btn-carrito{
 background: #000;
 
 }
 
-.col-6 .btn-whatsapp{
+.botones .btn-whatsapp{
 background: #3BA04C;
 
 }
@@ -222,7 +222,7 @@ background: #3BA04C;
 
 
 
-.col-6 .btn-carrito:hover,.col-6 .btn-whatsapp:hover{
+.botones .btn-carrito:hover,.botones.btn-whatsapp:hover{
 opacity: .9;
 }
 .promocion-titulo{
@@ -301,18 +301,12 @@ transform: translateY(-15px);
   display: block;
   box-shadow:0px 0px 4px rgba(0, 0, 0, .2);
   transition: all 0.25s;
-
-
-
-
 }
 
 .card-promocion h5{
   color: #fff;
   font-size: 16px;
-  /* padding: 10px 20px; */
-  /* margin-top: 10px; */
-  /* padding: 10px; */
+
 }
 
 
@@ -320,24 +314,18 @@ transform: translateY(-15px);
   background: #C72400;
 }
 
-
 .card-promocion .precio{
   color: #fff;
-  /* padding: 10px; */
-  /* text-align: left; */
-
 }
 
 .card-promocion .precio{
-  /* text-align:end; */
-  /* background: #6C1A1A; */
-  /* text-align: center; */
+
   color: #fff;
-  text-align: right;
+  /* text-align: right; */
   align-items: center;
   display: flex;
   padding: 10px;
-  justify-content: space-between;
+  justify-content: space-around;
 
 }
 
@@ -584,7 +572,7 @@ opacity: 1;
 .descripcion-modal ul {
   list-style: none;
    /* text-align: left; */
-  float: left;
+  /* float: left; */
   list-style: none;
   text-align: center;
 
@@ -603,6 +591,8 @@ font-weight: bold;
   color: #fff;
   padding: 8px;
   margin-right: 20px;
+  text-align: center;
+
   text-decoration: none;
 }
 
@@ -634,20 +624,366 @@ font-weight: bold;
 
 }
 
-.modal .col-5>p{
+.modal .lateral-modal>p{
 color: #6C1A1A;
 font-weight: bold;
 }
 
-.modal .col-5  p{
+.modal .lateral-modal p{
 color: #6C1A1A;
 font-weight: bold;
 }
-.modal .col-5  {
+.modal .lateral-modal {
 border-left: 2px solid #6C1A1A;
 }
 
-
-.col-5 .envio .pendiente ,.col-5 .total-modal .total-contenido,.col-5 .subtotal-modal .subtotal-contenido {
+.lateral-modal
+.lateral-modal .envio .pendiente ,.lateral-modal .total-modal .total-contenido,.col-5 .subtotal-modal .subtotal-contenido {
 color: #000;
 }
+
+.row div .cantidad{
+  color: #6C1A1A;
+  font-weight: bold;
+}
+
+
+
+
+@media (max-width: 576px) {
+
+  .imagen-general img{
+  width: 50%;
+  }
+  .imagen-general .descuento{
+    font-size: 20px;
+    background: #000;
+  }
+  .productos-informacion .precio-producto .descuento{
+    width: 40%;
+  }
+  .card-promocion .imagen img{
+    text-align: center;
+  }
+
+  .card-promocion span{
+    color: #fff;
+    font-size: 12px;
+  }
+  .main .productos-titulo h1{
+  font-size: 24px;
+
+  }
+  .detalle-producto .nav-item{
+    width: 90%;
+  }
+  .card-promocion .imagen img{
+    width: 90%;
+    /* text-align: center; */
+  }
+
+   .productos-item img{
+    width: 25%;
+    margin-bottom: 10px
+  }
+
+   .img-modal{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+  }
+
+   .img-modal img{
+     width: 100%;
+     text-align: center;
+  }
+
+  .nombre-producto-modal{
+    color: #6C1A1A;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .precio-modal{
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .descripcion-modal ul {
+    list-style: none;
+     text-align: left;
+    /* float: left; */
+    list-style: none;
+    text-align: center;
+
+  }
+
+  .descripcion-modal ul li span{
+  color: #6C1A1A;
+  font-weight: bold;
+
+  }
+  .btn-seguir-comprando{
+    width: 100%;
+  }
+
+  .btn-pagar-modal{
+
+    width: 100%;
+    margin-top:10px ;
+    /* margin-right: 20px; */
+  }
+
+  .modal-contenido{
+    /* background: chartreuse; */
+    padding: 10px 0px;
+  }
+
+
+
+
+}
+
+
+@media  screen and (min-width: 576px) and (max-width: 768px){
+
+    .imagen-general img{
+    width: 80%;
+    }
+    .imagen-general .descuento{
+      font-size: 20px;
+      background: #000;
+    }
+    .productos-informacion .precio-producto .descuento{
+      width: 40%;
+    }
+    .productos-item img{
+      width: 80%;
+      margin-top: 10px
+    }
+    .card-promocion .imagen img{
+      /* width: 90%; */
+      text-align: center;
+    }
+
+    .card-promocion span{
+      color: #fff;
+      font-size: 12px;
+      /* padding: 10px 20px; */
+      /* margin-top: 10px; */
+      /* padding: 10px; */
+    }
+    .main .productos-titulo h1{
+    padding: 20px;
+    font-size: 50px;
+
+    }
+    .img-modal{
+      display: flex;
+      align-self: center;
+      align-content: center;
+      align-items: center;
+    }
+
+     .img-modal img{
+       width: 100%;
+       text-align: center;
+    }
+
+    .nombre-producto-modal{
+      color: #6C1A1A;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .precio-modal{
+      font-weight: bold;
+      font-size: 24px
+    }
+
+    .descripcion-modal ul {
+      list-style: none;
+       /* text-align: left; */
+      /* float: left; */
+      list-style: none;
+      text-align: center;
+
+    }
+
+    .descripcion-modal ul li span{
+    color: #6C1A1A;
+    font-weight: bold;
+
+    }
+    .btn-seguir-comprando{
+      width: 100%;
+    }
+
+    .btn-pagar-modal{
+
+      width: 100%;
+      margin-top:10px ;
+      /* margin-right: 20px; */
+    }
+    .modal-contenido{
+      /* background: chartreuse; */
+      padding: 10px 50px;
+    }
+
+
+  }
+
+
+
+@media  screen and (min-width: 768px) and (max-width: 992px){
+
+    .imagen-general img{
+    width: 50%;
+    }
+    .imagen-general .descuento{
+      font-size: 20px;
+      background: #000;
+    }
+    .imagen-general .descuento p{
+      margin: auto;
+    }
+
+    .productos-informacion .precio-producto .descuento{
+      width: 20%;
+    }
+    .productos-item img{
+      width: 40%;
+      margin-top: 10px
+    }
+     .main .productos-titulo h1{
+    padding: 25px;
+    font-size: 60px;
+
+    }
+
+
+
+    .img-modal{
+      display: flex;
+      align-self: center;
+      align-content: center;
+      align-items: center;
+    }
+
+     .img-modal img{
+       width: 100%;
+       text-align: center;
+    }
+
+    .nombre-producto-modal{
+      color: #6C1A1A;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .precio-modal{
+      font-weight: bold;
+      font-size: 24px
+    }
+
+    .descripcion-modal ul {
+      list-style: none;
+       /* text-align: left; */
+      /* float: left; */
+      list-style: none;
+      text-align: center;
+
+    }
+
+    .descripcion-modal ul li span{
+    color: #6C1A1A;
+    font-weight: bold;
+
+    }
+    .btn-seguir-comprando{
+      width: 100%;
+      text-align: center;
+    }
+
+    .btn-pagar-modal{
+
+      width: 100%;
+      margin-top:10px ;
+      /* margin-right: 20px; */
+    }
+
+    .modal .lateral-modal {
+    border-left: 0px solid #6C1A1A;
+    }
+
+    .modal-contenido{
+      /* background: chartreuse; */
+      padding: 10px 50px;
+    }
+
+
+
+  }
+
+
+
+
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1368px) {
+
+
+  .img-modal{
+    display: flex;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+  }
+
+   .img-modal img{
+     width: 100%;
+     text-align: center;
+  }
+
+  .nombre-producto-modal{
+    color: #6C1A1A;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .precio-modal{
+    font-weight: bold;
+    font-size: 24px
+  }
+
+  .descripcion-modal ul li span{
+  color: #6C1A1A;
+  font-weight: bold;
+
+  }
+  .btn-seguir-comprando{
+    width: 100%;
+  }
+
+  .btn-pagar-modal{
+
+    width: 100%;
+    margin-top:10px ;
+    /* margin-right: 20px; */
+  }
+
+  /* .modal .lateral-modal {
+  border-left: 2px solid #6C1A1A;
+    border-top: 2px solid #6C1A1A;
+  } */
+
+
+
+
+
+ }
+
+
+

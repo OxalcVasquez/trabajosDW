@@ -43,7 +43,7 @@ color: #6C1A1A;
 
 .main .productos-titulo h1{
 /* background-image: url(../img/Rectangle\ 128.png); */
-background: orange;
+background: #6C1A1A;
 /* background: no-repeat; */
 text-align: center;
 padding: 30px;
@@ -395,6 +395,117 @@ width: 100%;
   text-decoration: none;
 color: rgba(159, 64, 64, 0.8);
 }
+
+
+
+
+
+
+@media (max-width: 576px) {
+
+  .productos-list  .card-producto{
+    width: 100%;
+
+  }
+
+
+  .filtros-activos{
+    font-size: 12px;
+  width: 100%;
+
+  }
+
+  .filtros{
+    width: 30%;
+    padding: 2px;
+    font-size: 10px;
+    margin-left: 20px;
+
+  }
+  .main .productos-titulo h1{
+  font-size: 50px;
+
+  }
+
+  .buscar-producto {
+  float: left;
+  /* margin-bottom: 100px; */
+  margin: 20px 0px;
+  }
+
+  .animales{
+    margin-top: 0px;
+    color: #fff;
+    /* width: 316.6px;
+    height: 65.38px; */
+    height: 50px;
+    font-size: 14px;
+
+
+
+  }
+
+
+  .animales img{
+    width: 50%;
+
+
+  }
+
+  .animales-contenedor{
+   /* width: 50%; */
+   display: flex;
+   justify-content: space-around;
+
+  }
+
+  .animales span{
+    display: none;
+
+
+  }
+
+
+
+}
+
+
+@media  screen and (min-width: 576px) and (max-width: 768px){
+
+    .buscar-producto {
+    float: left;
+    /* margin-bottom: 100px; */
+    margin: 20px 0px;
+    }
+
+    .animales{
+      margin-top: 0px;
+      color: #fff;
+      /* width: 316.6px;
+      height: 65.38px; */
+      height: 50px;
+      font-size: 14px;
+
+
+
+    }
+
+
+    .animales img{
+      width: 20%;
+
+
+    }
+
+    .animales-contenedor{
+     /* width: 50%; */
+     display: flex;
+     justify-content: space-between;
+
+    }
+
+
+  }
 
 
 

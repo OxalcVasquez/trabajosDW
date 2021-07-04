@@ -479,7 +479,7 @@ padding: 10px;
   transition: left 0.3s;
   }
 
-    .header-2 nav  .nav-menu_visible{
+  .header-2 nav  .nav-menu_visible{
      left: 0%;
   }
 
@@ -516,7 +516,7 @@ padding: 10px;
   }
   .grid .header-2{
     grid-area: header-2;
-    height: 350px;
+    height: 400px;
     /* background: blue; */
   }
 
