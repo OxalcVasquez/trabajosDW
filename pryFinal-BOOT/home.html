@@ -32,7 +32,7 @@
     <header class="header-2 ">
       <nav class=" d-flex justify-content-between row flex-row">
 
-        <div class="img-logo col-lg-6   col-md-6  col-sm-12  mb-3">
+        <div class="img-logo col-md-6   col-md-6  col-sm-12  mb-3">
           <img src="img/layer1.svg" alt="" class="img-fluid">
 
         </div>
@@ -91,7 +91,8 @@
         </div>
       </div>
       <div class="descripcion mt-5 mb-3">
-        <div class="contenedor-des">
+        <div class="contenedor-des row">
+          <div class="col-lg-6 order-2 order-md-1  col-md-9">
             <h2 class="descripcion-titulo">DESCRIPCIÓN DE LA EMPRESA</h2>
             <hr>
             <p>
@@ -102,8 +103,11 @@
               agricultura, ofreciendo productos de calidad y un servicio garantizado.
             </p>
             <a href="" class="btn-saber">Saber más</a>
+          </div>
+          <div class="col-lg-6 col-md-3  order-1 order-md-2 d-flex d-lg-block align-items-center ">
+            <img src="img/Rectangle 5.png" alt="">
+          </div>
         </div>
-        <img src="img/Rectangle 5.png" alt="">
       </div>
       <div class="productos mt-5 ">
         <h2 class="text-center productos-titulo">NUESTROS PRODUCTOS</h2>
@@ -175,10 +179,10 @@
           <div class="carousel-inner">
             <div class="carousel-item productos-item active">
               <div class="row">
-                <div class="col-6 imagen-servicio">
+                <div class="col-md-6 imagen-servicio">
                   <img src="img/ser1.png" alt="">
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 ">
                   <div class="descripcion-serv carouse">
                     <h3>DESCRIPCIÓN SERVICIO1</h3>
                     <P>
@@ -194,11 +198,11 @@
             </div>
             <div class="carousel-item productos-item ">
               <div class="row">
-                <div class="col-6  imagen-servicio">
+                <div class="col-md-6 imagen-servicio">
                   <img src="img/serv2.jpg" alt="">
 
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                   <div class="descripcion-serv">
                     <h3>DESCRIPCIÓN SERVICIO2</h3>
                     <P>
@@ -214,13 +218,13 @@
             </div>
             <div class="carousel-item productos-item">
               <div class="row">
-                <div class="col-6  imagen-servicio">
+                <div class="col-md-6  imagen-servicio ">
                   <img src="img/serv3.jpg" alt="">
 
                 </div>
-                <div class="col-6">
-                  <div class="descripcion-serv">
-                    <h3>DESCRIPCIÓN SERVICIO2</h3>
+                <div class="col-md-6">
+                  <div class="descripcion-serv ">
+                    <h3>DESCRIPCIÓN SERVICIO3</h3>
                     <P>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sem vitae sit sed nec commodo at viverra feugiat.
                       Felis
@@ -280,7 +284,7 @@
           <div class="carousel-inner mt-3">
             <div class="carousel-item blog-item active">
               <div class="row">
-                <div class="col-lg-6 col-sm-12 blog-car">
+                <div class="col-md-6 blog-car">
                   <div class="contenedor-caja">
                     <div class="carta">
                       <a href="" class="btn-fecha"><i class="fas fa-calendar-day"></i> 27/04/20</a>
@@ -293,7 +297,7 @@
                     </div>
                   </div>
               </div>
-              <div class="col-lg-6 col-sm-12 blog-car">
+              <div class="col-md-6  d-none d-md-block   blog-car">
                 <div class="contenedor-caja">
                   <div class="carta">
                     <a href="" class="btn-fecha"><i class="fas fa-calendar-day"></i> 27/04/20</a>
@@ -310,9 +314,10 @@
               </div>
             </div>
           </div>
+
           <div class="carousel-item blog-item ">
             <div class="row">
-              <div class="col-lg-6 col-sm-12 blog-car">
+              <div class="col-md-6   blog-car">
                 <div class="contenedor-caja">
                   <div class="carta">
                     <a href="" class="btn-fecha"><i class="fas fa-calendar-day"></i> 27/04/20</a>
@@ -326,7 +331,39 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 col-sm-12 blog-car">
+              <div class="col-md-6 d-none d-md-block  blog-car">
+                <div class="contenedor-caja">
+                  <div class="carta">
+                    <a href="" class="btn-fecha"><i class="fas fa-calendar-day"></i> 27/04/20</a>
+                    <a href="" class="btn-etiqueta">Noticias</a>
+
+                    <img src="img/blog3.png" alt="">
+                    <h4>Inició el sembrío de 4 mil 200 hectáreas de pastos mejorados en la región</h4>
+                    <h5>Sembrió en la región de Cajamarca</h5>
+                    <p>El gobernador Mesías Guevara, junto con... </p>
+                    <a href="" class="btn-leermas">Leer más...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item blog-item ">
+            <div class="row">
+              <div class="col-md-6 d-none  d-md-block  blog-car">
+                <div class="contenedor-caja">
+                  <div class="carta">
+                    <a href="" class="btn-fecha"><i class="fas fa-calendar-day"></i> 27/04/20</a>
+
+                    <a href="" class="btn-etiqueta">Ganadería</a>
+                    <img src="img/blog2.png" alt="">
+                    <h4>Se mejorará el ganado vacuno mediante inseminación artificial en Chota</h4>
+                    <h5>Inseminación artificial en ganado vacuno</h5>
+                    <p>Con el objetivo de mejorar el ganado vacuno...</p>
+                    <a href="" class="btn-leermas">Leer más...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 blog-car">
                 <div class="contenedor-caja">
                   <div class="carta">
                     <a href="" class="btn-fecha"><i class="fas fa-calendar-day"></i> 27/04/20</a>
