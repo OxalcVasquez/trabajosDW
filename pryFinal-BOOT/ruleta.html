@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/plantilla.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/33a0d02645.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/ruleta.css">
+  <title>Agroruleta</title>
+</head>
+
+<body>
+  <div class="grid">
+    <header class="header-1">
+      <nav>
+        <ul>
+          <li><a href="#" class="text-center">LOGIN</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">CONTACTANOS</a></li>
+          <li><a href="#">CARRITO</a></li>
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="header-2 ">
+      <nav class=" d-flex justify-content-between row flex-row">
+
+        <div class="img-logo col-lg-6   col-md-6  col-sm-12  mb-3">
+          <img src="img/layer1.svg" alt="" class="img-fluid">
+
+        </div>
+
+        <div class="col-lg-6  col-md-6  col-sm-12">
+          <ul class="nav-menu">
+            <li><a href="#" class="inicio-nav">INICIO</a></li>
+            <li><a href="#">PRODUCTOS</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="#">NOSOTROS</a></li>
+            <li class="buscar">
+              <a href=""><i class="fas fa-search"></i></a>
+            </li>
+
+          </ul>
+          <div class="slogan">
+            <h2>VELAMOS POR EL
+              BIENESTAR DE TUS
+              ANIMALES</h2>
+          </div>
+          <div class="ver-productos">
+            <a href="">VER PRODUCTOS</a>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+    <main class="main">
+      <div class="ruleta-titulo">
+        <h1>AGRORULETA</h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 p-0 ">
+              <h2 class="gana">GANA INCREIBLES PREMIOS</h2>
+            <div class="flecha"></div>
+            <div class="d-flex justify-content-center mt-4 flecha-ruleta">
+              <img src="img/chevron_duo_up.svg" class="" alt="">
+            </div>
+            <div class="ruleta  d-flex justify-content-center">
+              <canvas id="canvas" width="434" height="434">
+              </canvas>
+            </div>
+            <!-- <div class="d-flex justify-content-center mt-4">
+              <img src="img/chevron_duo_up.svg" class="" alt="">
+
+            </div> -->
+            <div class="botones-ruleta d-flex justify-content-center mt-4">
+              <button id="spin_button" src="" alt="Spin" onClick="startSpin();">
+                Girar<img />
+              </button>
+              <!-- <a href="#" onClick="resetWheel(); return false;">Jugar
+                de Nuevo</a>
+              <a href="">Intentos disponibles 1</a> -->
+            </div>
+              <div class="intentos d-flex justify-content-center mt-1">
+                <p id="intentos">Intentos 1</p>
+              </div>
+              <div class="adicional-ruleta m-4">
+                <h2 class="p-3">¿TE QUEDASTE SIN INTENTOS ?</h2>
+                <div class="acerca-ruleta p-4 d-flex justify-content-around">
+                  <div class="contendedor-ruleta p-4">
+                    <p>Comprar producto</p>
+                    <a href="
+                    ">
+                    <img src="img/producto-ruleta.png" alt="">
+
+                  </a>
+                    <a href="
+                    " class="ver d-block">Ver productos</a>
+
+                  </div>
+                  <div class="contendedor-ruleta p-4">
+                    <p>Adquirir servicio</p>
+                    <a href="
+                    ">
+                    <img src="img/servicio-ruleta.png" alt="">
+
+                  </a>
+                    <a href="
+                                      " class="ver d-block">Ver productos</a>
+                  </div>
+                  <div class="contendedor-ruleta p-4">
+                    <p>Reseña un artículo de nuestro blog</p>
+                    <a href="
+                    ">
+                    <img src="img/bolg-servicio.png" alt="">
+
+                  </a>
+                    <a href="
+                                      " class="ver d-block">Ver productos</a>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+    <footer class="footer ">
+      <div class="footer-main row mt-4 mb-3 ">
+
+        <div class="col-footer col-md-4 col-sm-6">
+          <form action="">
+            <h3>Contáctanos</h3>
+            <label for="nombre">Nombres</label>
+            <input type="text" name="nombre">
+            <label for="correo">Correo</label>
+            <input type="email" name="correo">
+            <label for="consulta">Consulta</label>
+            <textarea name="consulta" cols="30" rows="5"></textarea>
+            <button>Enviar</button>
+          </form>
+        </div>
+
+        <div class="col-footer col-md-4 mapa col-sm-6">
+
+          <h3><b>Mapa del sitio</b></h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Servicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+          </ul>
+        </div>
+
+        <div class=" logo col-md-4 col-sm-12 col-footer">
+          <img src="./img/layer1.svg" alt="">
+          <ul>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <a href="#">(051) 9999999</a>
+            </li>
+            <li>
+              <i class="far fa-envelope"></i>
+              <a href="#">bioquimi@gmail.com</a>
+            </li>
+            <li><a href="#">Siguenos en nuestras </a></li>
+            <li><a href="">redes sociales:</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="copy justify-content-between">
+        <div class="">Bioquímica del Norte Andino 2021 - Copyright © Todos los Derechos Reservados</div>
+        <div class="web-master">Desarrollado por ROXV</div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./js/Whinheels/Winwheel.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="js/ruleta.js"></script>
+
+</body>
+
+</html>
