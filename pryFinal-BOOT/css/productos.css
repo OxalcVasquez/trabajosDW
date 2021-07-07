@@ -82,7 +82,7 @@ height: 100%;
 
 }
 
-.col-9 .card-producto:hover{
+.productos-list .card-producto:hover{
 transform: translateY(-15px);
 
   box-shadow: 0 12px 16px rgba(0, 0, 0, .2);
@@ -343,7 +343,7 @@ border-radius: 50%;
 background: #6C1A1A;
 }
 
-.controles-navegacion .numeros-indices .dos,.controles-navegacion .numeros-indices .tres{
+.controles-navegacion .numeros-indices .desactivados,.controles-navegacion .numeros-indices .desactivados{
 opacity: .5;
 }
 

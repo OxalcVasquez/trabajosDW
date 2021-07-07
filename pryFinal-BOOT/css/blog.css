@@ -1,0 +1,189 @@
+.blog-list{
+  /* width: 100%; */
+  /* background-color: #000; */
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+
+  justify-content: space-between;
+}
+
+.buscar-producto {
+/* float: right; */
+/* margin-bottom: 100px; */
+}
+
+
+.buscar-producto label{
+font-size: 28px;
+font-weight: bold;
+color: #6C1A1A;
+margin-right: 20px;
+
+}
+
+
+.col-6  h3{
+/* font-size: 20px; */
+/* font-weight: bold; */
+color: #6C1A1A;
+margin-right: 10px;
+font-size: 28px;
+
+font-weight: bold;
+
+
+}
+
+.row .categoria-container .categoria{
+  background: #6C1A1A;
+  border: 0.691414px solid #FFFFFF;
+  box-sizing: border-box;
+  color: #fff;
+  width: 40%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6.91414px;
+}
+
+.row .categoria-container .categoria:hover{
+  background: #000;
+
+}
+
+.container .row{
+  /* background-color: #000; */
+}
+
+
+
+.buscar-producto input{
+  background: #FFFFFF;
+  width: 265px;
+  border: 1px solid #800000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.buscar-producto input:focus{
+  /* border: none; */
+   outline: 0;
+
+  /* outline: none; */
+}
+
+.contenedor-caja {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin: auto;
+  /* background-color: rosybrown; */
+}
+
+
+.contenedor-caja .carta{
+border-radius: 8px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+overflow: hidden;
+text-align: center;
+/* height: 500px; */
+transition: all 0.25s;
+transform: translateY(0px);
+
+/* background: red; */
+}
+
+
+ .contenedor-caja .carta h4{
+color: #6C1A1A;
+font-weight: bold;
+font-size: 20px;
+margin-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+/* background: red; */
+}
+.contenedor-caja .carta h5{
+font-weight: bold;
+
+/* background: red; */
+}
+
+
+ .contenedor-caja .carta:hover{
+transform: translateY(-15px);
+
+  box-shadow: 0 12px 16px rgba(0, 0, 0, .2);
+}
+
+ .contenedor-caja img{
+  width: 100%;
+
+  /* background-color: rosybrown; */
+}
+
+
+.contenedor-caja .btn-leermas{
+  width: 25%;
+  margin: auto;
+  text-decoration: none;
+  display: block;
+  background: #6C1A1A;
+  padding: 5px;
+  color: #fff;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+  border-radius: 8px;
+}
+ .contenedor-caja .btn-leermas:hover{
+
+  background: #000;
+
+}
+
+.blog .carousel-control-prev-icon {
+  background-image:url("../img/chevron_big_left.svg");
+
+}
+.blog .carousel-control-next-icon { background-image:url("../img/chevron_big_right.svg")}
+
+
+.blog-item {
+  /* width: 90%; */
+  /* margin: auto; */
+  padding: 0px 200px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* margin: auto; */
+  /* background: rebeccapurple; */
+}
+
+.contenedor-caja .btn-etiqueta{
+  margin: 10px;
+  text-decoration: none;
+  background: #6C1A1A;
+   right: 0;
+  padding: 5px;
+  color: #fff;
+  border-radius: 8px;
+  position: absolute;
+
+}
+
+.contenedor-caja .btn-fecha{
+  /* width: 25%; */
+  margin: auto;
+  margin: 10px;
+  z-index: 1;
+
+  text-decoration: none;
+  /* display: block; */
+  background: #6C1A1A;
+  padding: 5px;
+  color: #fff;
+  /* margin-bottom: 10px; */
+  border-radius: 8px;
+  position: absolute;
+}

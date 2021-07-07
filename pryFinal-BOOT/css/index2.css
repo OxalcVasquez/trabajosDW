@@ -1,0 +1,274 @@
+body{
+    overflow-x: hidden;
+ }
+
+    #img{
+        background-color:#6C1A1A;
+        height: 100vh;
+    }
+    #logeo{
+        background-color: #D8C6AC;
+        height: 100vh;
+    }
+    #Face a,#Goog a,#Sinre a{
+    text-decoration: none;
+    color: #fff;
+    }
+    input{
+        color: white;
+    }
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+        align-content: center;
+        padding-top: 2%;
+    }
+    .flex-container div{
+        width: 30%;
+        margin: 8px;
+        margin-left: 15px;
+        text-align: center;
+    }
+    .flex-container img{
+        width: 200.93px;
+        height: 190.06px;
+        animation-name: animar;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        position: relative;
+        border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    .flex-container img:hover{
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        transform: scale(0.9);
+    }
+
+    #loglog{
+        width:177.34px;
+        height:183.36px;
+        position: relative;
+        left: 32.95%;
+        right: 14.05%;
+        top: 3.46%;
+        bottom: 72.78%;
+
+    }
+    #opciones{
+        text-align: center;
+        bottom: -30px;
+        position: relative;
+        width: 330px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .opciones{
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 24px;
+        margin: 40px;
+    }
+
+    /* estilos de los border del logeo */
+    #entrar{
+        border-bottom: solid  white;
+        border-bottom-width:3px;
+    }
+
+    #registrar {
+        border-bottom: solid #6C1A1A;
+        border-bottom-width:3px;
+    }
+    #registrar a{
+        color: #6C1A1A;
+    }
+
+    #entrar a{
+        color:white;
+    }
+    #entrar a:hover{
+        color: #6C1A1A;
+    }
+
+    #entrar:hover,#registrar:hover{
+        border-bottom: solid  #6C1A1A;
+    }
+
+    hr{
+        visibility: hidden;
+        margin: 5px;
+    }
+    .nombres{
+        background-color: #6C1A1A;
+        border: none;
+        margin-bottom:4px ;
+        width: 158px;
+    }
+    #entradas{
+        position: relative;
+        text-align: center;
+        bottom: -40px;
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+    .entradas{
+        background-color: #6C1A1A;
+        border: none;
+        width: 320.71px;
+        height: 35px;
+    }
+    ::-webkit-input-placeholder {
+        color:white;
+        position: relative;
+        right: -10px;
+        font-family: Roboto;
+        font-size: 16px;
+    }
+
+    #btnentrar{
+        position: relative;
+        text-align: center;
+        bottom: -50px;
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+    #btnen{
+        background-color: #3BA04C;
+        color: white;
+        border: none;
+        width: 320.71px;
+        height: 35px;
+        border-radius: 15px;
+        font-family: Roboto;
+        font-size: 21px;
+        box-shadow: 0px 2px 2px grey;
+    }
+
+    #o{
+        color: white;
+        padding-bottom:15px;
+    }
+
+    #Face,#Goog,#Sinre{
+        color: white;
+        border: none;
+        width: 320.71px;
+        height: 35px;
+        border-radius: 15px;
+        font-family: Roboto;
+        font-size: 21px;
+        box-shadow: 0px 2px 2px grey;
+    }
+    #Face:hover,#Goog:hover,#Sinre:hover,#btnen:hover{
+        box-shadow: 0px 2px 2px #444444;
+    }
+    #Face{
+        background-color: #316CDF;
+    }
+    #Face i{
+        position: relative;
+        left: -80px;
+    }
+    #Goog{
+        background-color: white;
+        color:#666666;
+        margin:5px;
+    }
+    #Goog i{
+        position: relative;
+        left: -90px;
+    }
+    #Sinre{
+        background-color: #9D7232;
+    }
+
+    p{
+        font-size: 12px;
+        margin: 12px;
+        font-family: roboto;
+    }
+
+    p span{
+        color: #6C1A1A;
+        font-size: 13px;
+    }
+
+    #condiciones{
+        width: 80%;
+        position: relative;
+        left: 45px;
+    }
+
+    .fa-google {
+        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* RENDERIZADO  */
+    @media (max-width: 1425px) {
+        .flex-container{
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: row; */
+            align-content: center;
+            padding-top: 3%;
+        }
+        @keyframes animar{
+
+            0%{
+        top: -2rem;
+            }
+             50%{
+        top: 1rem;
+            }
+            100%{
+        top: -2rem;
+
+      }
+
+        }
+        }
+        @media (max-width: 706px) {
+            #img{
+                   display:none;
+            }
+
+            #logeo{
+                width:100vh;
+                height:100vh;
+            }
+
+
+        }
+        @media (min-width: 1440px) {
+            .flex-container{
+                display: flex;
+                flex-wrap: wrap;
+                /* flex-direction: row; */
+                align-content: center;
+                padding-top: 5%;
+            }
+              /* ANIMACIÓN */
+        @keyframes animar{
+
+            0%{
+        top: -2rem;
+            }
+             50%{
+        top: 5rem;
+            }
+            100%{
+        top: -2rem;
+
+      }
+
+        }
+            }
