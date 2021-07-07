@@ -72,7 +72,39 @@ background: rosybrown;
 
 } */
 
+.imagen-nosotros img{
+  transition: all 1s;
+}
+.imagen-nosotros img:hover{
+  transition: all 0.5s;
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px #6C1A1A;
+  -webkit-box-shadow: 0px 0px 15px 15px #6C1A1A;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
 
+.col-4 a img{
+transition: all 1s;
+}
+
+.col-4 a:hover img{
+ -webkit-transform: rotate(360deg);
+ transform: rotate(360deg);}
+
+
+ .imagen-servicio a img{
+   transition: all 1s;
+ }
+
+
+
+ .imagen-servicio a img:hover{
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;}
 
 .contenedor-des p{
 text-align: center;
