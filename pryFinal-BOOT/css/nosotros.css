@@ -1,0 +1,74 @@
+.col-6 h2{
+text-align: center;
+font-weight: bold;
+color:#6C1A1A;;
+}
+
+.col-6 p{
+text-align: justify;
+line-height: 27px;
+}
+
+.valor {
+  width: 26%;
+}
+.valores:hover{
+ background: #000;
+}
+
+
+.valores{
+  background: #6C1A1A;
+  border-radius: 138.087px;
+  padding: 10px;
+  transition: all 0.5s;
+
+  /* width: 33%; */
+}
+
+.valor p{
+  color: #6C1A1A;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  transition: all 0.5s;
+}
+.valor p:hover{
+color: #000;
+}
+.uno p{
+  font-size: 40px;
+}
+.lista{
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.col-6 h3{
+  color: #6C1A1A;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mision,.vision{
+background: #6C1A1A;
+color: #fff;
+padding: 50px;
+transition: all .5s;
+height: 80%;
+
+}
+
+.mision p,.vision p{
+text-align: center;
+font-weight: bold;
+
+}
+
+
+.mision:hover,.vision:hover{
+background: #000;
+
+}

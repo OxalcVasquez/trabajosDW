@@ -29,3 +29,90 @@
 
 
 }
+
+.buscar-producto {
+/* float: right; */
+/* margin-bottom: 100px; */
+}
+
+
+.buscar-producto label{
+font-size: 28px;
+font-weight: bold;
+color: #6C1A1A;
+margin-right: 20px;
+
+}
+
+.buscar-producto input{
+  background: #FFFFFF;
+  width: 100%;
+  border: 1px solid #800000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.col-3 h3{
+color: #6C1A1A;
+font-weight: bold;
+}
+
+.row .categoria-container .categoria{
+  background: #6C1A1A;
+  border: 0.691414px solid #FFFFFF;
+  box-sizing: border-box;
+  color: #fff;
+  width: 50%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6.91414px;
+  margin-top: 10px;
+}
+
+.row .categoria-container .categoria:hover{
+  background: #000;
+
+}
+
+.contenido-lateral h6{
+  color: #6C1A1A;
+  font-weight: bold;
+}
+
+.contenido-lateral p{
+  text-align: justify;
+  font-size: 14px;
+}
+.ver-todos a {
+  text-decoration: none;
+  background: #6C1A1A;
+  width: 60%;
+  color: #fff;
+  padding: 5px;
+  box-shadow: 0px 2.77245px 2.77245px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: all .25s;
+  text-align: center;
+}
+
+.ver-todos a:hover {
+color: #fff;
+background: #000;
+}
+.fa-instagram{
+  color: #6C1A1A;
+}
+
+.caja-comentarios textarea{
+  width: 90%;
+  resize: none;
+
+  /* border: none; */
+  background: #FFFFFF;
+  height: 70px;
+  /* padding: 4px; */
+  border: 1px solid #800000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}

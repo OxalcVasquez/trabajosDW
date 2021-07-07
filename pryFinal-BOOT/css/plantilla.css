@@ -643,6 +643,10 @@ padding: 10px;
 
 
 }
+.seccion-activada{
+  text-decoration: underline;
+}
+
 
 
 @media  screen and (min-width: 576px) and (max-width: 768px){
